@@ -1,0 +1,31 @@
+[push]
+	default = simple
+[alias]
+	ds = diff --shortstat
+	d = diff
+	c = commit -am
+	er = reset --hard
+	sf = reset HEAD~1 --soft
+	s = status
+	sv = stash save
+	st = stash
+	ch = checkout
+	alias = config --get-regexp ^alias\\.
+	cm = commit
+	a = add -A :/
+	l = log
+	sh = push
+	b = branch
+	ms = merge --squash
+	shs = "push --set-upstream "
+	ll = log --pretty=oneline
+	p = cherry-pick
+	r = remote -v
+	u = reset HEAD *
+	m = merge
+	ca = commit -a --amend
+	rb = rebase
+	f = fetch
+	ul = pull
+[color "branch"]
+	current = red

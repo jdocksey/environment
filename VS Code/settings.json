@@ -1,0 +1,889 @@
+{
+    "editor.tokenColorCustomizations": {
+        "comments": "#999",
+
+        "[Nord]": {
+            "comments": "#7e839b"
+        }        
+    },
+
+    "workbench.colorCustomizations": {
+        "[Nord]": {
+            // "editor.background": "#201f28",
+            "editor.wordHighlightBackground": "#267b9d88",
+            "editor.wordHighlightBorder": "#267b9d88",
+            // "editor.wordHighlightBackground": "#1F89B488",
+            // "editor.wordHighlightBorder": "#1F89B488",
+            "editor.wordHighlightStrongBackground": "#229F5788",
+            "editor.wordHighlightStrongBorder": "#229F5788",
+            "editor.selectionHighlightBackground": "#1F89B488",
+            // "editor.selectionHighlightBackground": "#1d5476",
+            // "editor.selectionHighlightBackground": "#197dbb",
+
+            // "editor.findMatchBackground": "#FFF8",
+            // "editor.findMatchBorder": "#FFF8",
+            // "editor.findMatchBackground": "#1F89B488",
+            // "editor.findMatchBackground": "#ffd97077",
+            // "editor.findMatchHighlightBackground": "#3e6379",
+            
+            // "tab.inactiveForeground": "#8AF",
+            // "tab.hoverForeground": "#FFF",
+            // "tab.activeForeground": "#8AF",
+            // "gitDecoration.modifiedResourceForeground": "#808A90"
+        },
+        
+        "[1337]": {
+            "sideBar.background": "#232229",
+            "sideBarSectionHeader.background": "#303040",
+            "editorGroupHeader.tabsBackground": "#191e29",
+            "tab.activeBackground": "#303040",
+            "tab.inactiveBackground": "#191e29",
+            // "tab.activeBackground": "#252533",
+
+            "editor.background": "#151a25",
+            // "editor.background": "#191e29",
+            // "editor.background": "#191919",
+            // "editor.background": "#232328",
+            // "editor.background": "#242432",
+            // "editor.background": "#292934",
+
+            "editor.lineHighlightBackground": "#20384D",
+            // "editor.lineHighlightBackground": "#456",
+            // "editor.lineHighlightBackground": "#30485D",
+            // "editor.lineHighlightBorder": "#30485D",
+            // "editorOverviewRuler.wordHighlightForeground": "#1a1a09",
+            // "editorOverviewRuler.wordHighlightStrongForeground": "#1a1a09",
+
+            "editor.wordHighlightBackground": "#1F89B488",
+            "editor.wordHighlightBorder": "#1F89B488",
+            "editor.wordHighlightStrongBackground": "#229F5788",
+            "editor.wordHighlightStrongBorder": "#229F5788",
+            "editor.selectionHighlightBackground": "#197dbb",
+            // "editor.selectionHighlightBackground": "#75754b",
+
+            "editor.findMatchBackground": "#ffd97077",
+            "editor.findMatchHighlightBackground": "#197dbb",
+
+            // "activityBar.background": "#3574ca",
+            // "activityBar.activeBorder": "#f2ccdc",
+            // "activityBar.foreground": "#15202b",
+            // "activityBar.inactiveForeground": "#15202b99",
+            // "activityBarBadge.background": "#f2ccdc",
+            // "activityBarBadge.foreground": "#15202b",
+
+            // "statusBar.background": "#3574ca",
+            // "statusBarItem.hoverBackground": "#5d90d5",
+            // "statusBar.foreground": "#e7e7e7"
+        }
+    },
+    "workbench.activityBar.visible": false,
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.decorations.badges": false,
+    "workbench.editor.decorations.colors": false,
+    "editor.mouseWheelScrollSensitivity": 3,
+    "editor.fastScrollSensitivity": 3.5,
+    "editor.stablePeek": false,
+    // "editor.fontFamily": "Input",
+    // "editor.fontFamily": "JetBrains Mono light",
+    "editor.fontFamily": "JetBrains Mono",
+    // "editor.fontFamily": "JetBrains Mono Medium",
+    // "editor.fontFamily": "Fira Code",
+    // "editor.fontWeight": "500",
+    // "editor.lineHeight": 22,
+    "editor.lineHeight": 23,
+    // "editor.lineHeight": 26,
+    "editor.fontLigatures": true,
+    // none, gutter, line, all
+    "editor.renderLineHighlight": "all",
+    "editor.renderIndentGuides": false,
+    "workbench.startupEditor": "none",
+    // "emmet.useNewEmmet": true,
+    "tslint.run": "onSave",
+    "window.menuBarVisibility": "toggle",
+    "macros": {
+        "duplicateLineAndToggleComment": [
+            "editor.action.copyLinesDownAction",
+            "editor.action.commentLine",
+            "cursorUp"
+        ],
+        "deleteLineLeft": [
+            "cursorHomeSelect",
+            "deleteRight"
+        ],
+        "deleteLineAll": [
+            "cursorHomeSelect",
+            "deleteRight",
+            "cursorEndSelect",
+            "deleteLeft"
+        ],
+        "deleteStartOfLineCharacter": [
+            "cursorHome",
+            "deleteRight"
+        ],
+        "deleteEolCharacter": [
+            "cursorEnd",
+            "deleteLeft"
+        ],
+        "eolSemicolon": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            }
+        ],
+        "eolColon": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ":"
+                }
+            }
+        ],
+        "eolComma": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ","
+                }
+            }
+        ],
+        "eolPeriod": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": "."
+                }
+            }
+        ],
+        "eolBrackets": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": " {\n"
+                }
+            }
+        ],
+        "eolHtmlClosingBracket": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ">"
+                }
+            }
+        ],
+        "selectToBracketAtEOL": [
+            "cursorEnd",
+            "editor.action.selectToBracket"
+            // { "command": "editor.action.selectToBracketAtEOL" }
+        ],
+        "goToThirdToLastCharacter": [
+            "cursorEnd",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertConsoleLog": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "console.log();"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertPaddingSpaces": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "  "
+                }
+            },
+            "cursorLeft"
+        ],
+        "insertForEach": [
+            // Copy the word under the cursor
+            "cursorWordStartLeft",
+            "cursorWordStartRightSelect",
+            "editor.action.clipboardCopyAction",
+            "cursorLeft",
+            // Insert some text
+            {
+                "command": "type",
+                "args": {
+                    "text": "forEach("
+                }
+            },
+            "cursorWordStartRight",
+            // Insert more text
+            {
+                "command": "type",
+                "args": {
+                    "text": " => );"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft"
+            // "editor.action.clipboardPasteAction"
+        ],
+        "insertEqualsWithQuotes": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": "=\"\""
+                }
+            },
+            "cursorLeft"
+        ],
+        "insertFatArrow": [
+            {
+                "command": "type",
+                "args": {
+                    "text": " => "
+                }
+            }
+        ],
+        "eolInsertFatArrow": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": " => "
+                }
+            }
+        ],
+        "insertImportStatement": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "import {  } from '';"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertLambdaFunction": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "() => "
+                }
+            }
+        ],
+        "insertThisAtStart": [
+            "cursorHome",
+            {
+                "command": "type",
+                "args": {
+                    "text": "this."
+                }
+            }
+        ],
+        "insertMethodParens": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": "();"
+                }
+            }
+        ],
+        "insertThisAndMethodParens": [
+            "cursorHome",
+            {
+                "command": "type",
+                "args": {
+                    "text": "this."
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": "();"
+                }
+            }
+        ],
+        "insertTsLintMaxLineLength": [
+            "editor.action.insertLineBefore",
+            "editor.action.commentLine",
+            {
+                "command": "type",
+                "args": {
+                    "text": "tslint:disable-next-line:max-line-length"
+                }
+            }
+        ],
+        "insertJasmineDescribeBlock": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "describe('', () => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight"
+        ],
+        "insertJasmineTest": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "it('', () => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight"
+        ],
+        "insertJasmineTestWithAsync": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "it('', async() => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight"
+        ],
+        "insertJasmineTestWithFakeAsync": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "it('', fakeAsync(() => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp"
+        ],
+        "insertJasmineTestForService": [
+            // Copy the word under the cursor (the name of the service)
+            "cursorWordStartLeft",
+            "cursorWordStartRightSelect",
+            "editor.action.clipboardCopyAction",
+            // Insert the spec
+            {
+                "command": "type",
+                "args": {
+                    "text": "it('', inject([NEWSERVICE], (service: NEWSERVICE) => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            // Navigate to the first occurrence of NEWSERVICE
+            /*/
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            // Replace it with the new service name
+            "cursorWordStartRightSelect",
+            "editor.action.clipboardPasteAction",
+            // Navigate to the second occurrence of NEWSERVICE
+            "cursorEnd",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            // Replace it with the new service name
+            "cursorWordStartLeft",
+            "cursorWordStartRightSelect",
+            "editor.action.clipboardPasteAction",
+            // Position the cursor within the spec description quotes
+            "cursorHome",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight"
+            /*/
+        ],
+        "insertExpectCall": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "expect()"
+                }
+            },
+            "cursorLeft"
+        ],
+        "insertComponentFormGetCall": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "component.form.get('')"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertLoopGroovy": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ".each { ->\n"
+                }
+            },
+            "cursorUp",
+            "cursorEnd",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertPeriodDelayed": [
+            "cursorRight",
+            "cursorRight",
+            {
+                "command": "type",
+                "args": {
+                    "text": "."
+                }
+            }
+        ],
+        "insertRepeatableBlockComment": [
+            "editor.action.insertLineBefore",
+            {
+                "command": "type",
+                "args": {
+                    "text": "/*/"
+                }
+            },
+            "cursorDown",
+            "editor.action.insertLineAfter",
+            {
+                "command": "type",
+                "args": {
+                    "text": "/*/"
+                }
+            }
+        ],
+        "insertRegionTag": [
+            "editor.action.insertLineBefore",
+            {
+                "command": "type",
+                "args": {
+                    "text": "//#region "
+                }
+            }
+        ],
+        "insertEndRegionTag": [
+            "editor.action.insertLineAfter",
+            {
+                "command": "type",
+                "args": {
+                    "text": "//#endregion"
+                }
+            }
+        ],
+        "insertNgRxActionProps": [
+            {
+                "command": "type",
+                "args": {
+                    "text": ", props<{  }>()"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertNgRxActionSimple": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "export const ACTION_NAME = createAction(`${Actor.SYSTEM} DESCRIPTION`);"
+                }
+            },
+            "cursorHome",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordStartLeftSelect"
+        ],
+        "insertNgRxActionComplex": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "export const ACTION_NAME = createAction(`${Actor.SYSTEM} DESCRIPTION`, props<{ PROP: TYPE }>());"
+                }
+            },
+            "cursorHome",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordStartLeftSelect"
+        ],
+        "insertNgRxEffectSimple": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "public EFFECT_NAME = createEffect(() => this.actionStream.pipe(\n\tofType(actions.ACTION),\nfilter(action => action.PROP),\nmap(action => actions.NEW_ACTION)\n));"
+                }
+            },
+            "cursorHome",
+            "deleteLeft",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordStartLeftSelect"
+        ],
+        "insertNgRxEffectComplex": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "public EFFECT_NAME = createEffect(() => this.actionStream.pipe(\n\tofType(actions.ACTION),\nwithLatestFrom(this.store.select(selectors.SELECTOR)),\nfilter(([action, DATA]) => DATA),\nmap(([action, DATA]) => actions.NEW_ACTION)\n));"
+                }
+            },
+            "cursorHome",
+            "deleteLeft",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordStartLeftSelect"
+        ],
+        "newLineAbove": [
+            "editor.action.insertLineBefore",
+            "cursorDown",
+            "cursorEnd"
+        ],
+        "newLineBelow": [
+            "editor.action.insertLineAfter",
+            "cursorUp",
+            "cursorEnd"
+        ],
+        "wrapWordInQuotes": [
+            "cursorWordStartLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "'"
+                }
+            },
+            "cursorWordStartRight",
+            {
+                "command": "type",
+                "args": {
+                    "text": "'"
+                }
+            }
+        ],
+        "wrapWordInDoubleQuotes": [
+            "cursorWordStartLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\""
+                }
+            },
+            "cursorWordStartRight",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\""
+                }
+            }
+        ],
+        "commentOnNewLine": [
+            "editor.action.insertLineBefore",
+            "editor.action.commentLine"
+        ],
+        "commentToDoOnNewLine": [
+            "editor.action.insertLineBefore",
+            "editor.action.commentLine",
+            {
+                "command": "type",
+                "args": {
+                    "text": "TODO: "
+                }
+            }
+        ],
+        "commentToDoImplementOnNewLine" : [
+            "editor.action.insertLineAfter",
+            "editor.action.commentLine",
+            {
+                "command": "type",
+                "args": {
+                    "text": "TODO: Implement"
+                }
+            }
+        ],
+        "selectWord": [
+            "cursorWordStartLeft",
+            "cursorWordStartRightSelect",
+            // There seems to be a timing issue that prevents the copy action from executing properly
+            "editor.action.clipboardCopyAction",
+            "cursorRight"
+        ],
+        "replaceWord": [
+            "cursorWordStartLeft",
+            "cursorWordRightSelect",
+            "editor.action.clipboardPasteAction"
+        ],
+        "deleteWord": [
+            "cursorWordStartLeft",
+            "cursorWordRightSelect",
+            "deleteLeft"
+        ],
+        "deleteWordAtStartOfLine": [
+            "cursorHome",
+            "cursorWordRightSelect",
+            "deleteLeft"
+        ]
+    },
+    "git.enableSmartCommit": true,
+    "[typescript]": {},
+    "extensions.ignoreRecommendations": false,
+    "typescript.check.npmIsInstalled": false,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "telemetry.telemetryLevel": "off",
+    "[log]": {},
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "gitlens.codeLens.authors.enabled": false,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 1,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "peacock.affectTitleBar": false,
+    "peacock.affectStatusBar": true,
+    "peacock.favoriteColors": [
+        {
+            "name": "blue-default",
+            "value": "#3474cb"
+        },
+        {
+            "name": "blue-bright",
+            "value": "#007fff"
+        },
+        {
+            "name": "blue-dark",
+            "value": "#275798"
+        },
+        {
+            "name": "blue-dark-2",
+            "value": "#304472"
+        },
+        {
+            "name": "blue-gray",
+            "value": "#769ed4"
+        },
+        {
+            "name": "blue-gray-2",
+            "value": "#566DA2"
+        },
+        {
+            "name": "blue-gray-3",
+            "value": "#8596B4"
+        },
+        {
+            "name": "green",
+            "value": "#42b883"
+        },
+        {
+            "name": "yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "orange",
+            "value": "#eb5424"
+        },
+        {
+            "name": "orange-peach",
+            "value": "#ffa958"
+        },
+        {
+            "name": "red-pink",
+            "value": "#b73653"
+        },
+        {
+            "name": "match-background",
+            "value": "#2e3440"
+        }
+    ],
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.snippetSuggestions": "none",
+    "update.mode": "manual",
+    "terminal.integrated.rendererType": "dom",
+    "workbench.editor.tabCloseButton": "off",
+    "explorer.autoReveal": false,
+    "diffEditor.renderIndicators": false,
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.iconTheme": null,
+    "files.autoSave": "onFocusChange",
+    "java.completion.enabled": false,
+    "editor.wordBasedSuggestions": false,
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "editor.minimap.size": "fit",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "angular.experimental-ivy": true,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.defaultDateStyle": "absolute",
+    "editor.trimAutoWhitespace": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.suggestSelection": "first",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+    "workbench.sideBar.location": "right",
+    "editor.accessibilitySupport": "off",
+    "workbench.preferredDarkColorTheme": "Nord",
+    "workbench.preferredLightColorTheme": "Nord Light",
+    "typescript.preferences.quoteStyle": "single",
+    "extensions.autoUpdate": false,
+    "editor.parameterHints.enabled": false,
+    "workbench.tips.enabled": false,
+    "scm.diffDecorationsGutterWidth": 2,
+    "editor.overviewRulerBorder": false,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.tabs.enabled": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "sqltools.useNodeRuntime": true,
+    "workbench.statusBar.visible": false,
+    "workbench.colorTheme": "Nord",
+    "window.zoomLevel": -1,
+    "breadcrumbs.enabled": false,
+}
