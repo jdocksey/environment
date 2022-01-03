@@ -4,7 +4,7 @@
 
         "[Nord]": {
             "comments": "#7e839b"
-        }        
+        }
     },
 
     "workbench.colorCustomizations": {
@@ -25,13 +25,13 @@
             // "editor.findMatchBackground": "#1F89B488",
             // "editor.findMatchBackground": "#ffd97077",
             // "editor.findMatchHighlightBackground": "#3e6379",
-            
+
             // "tab.inactiveForeground": "#8AF",
             // "tab.hoverForeground": "#FFF",
             // "tab.activeForeground": "#8AF",
             // "gitDecoration.modifiedResourceForeground": "#808A90"
         },
-        
+
         "[1337]": {
             "sideBar.background": "#232229",
             "sideBarSectionHeader.background": "#303040",
@@ -231,6 +231,30 @@
             "cursorLeft",
             "cursorLeft"
             // "editor.action.clipboardPasteAction"
+        ],
+        "insertSetTimout": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "setTimeout(() => {\n"
+                }
+            },
+            "cursorDown",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": ", 1000"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorUp"
         ],
         "insertEqualsWithQuotes": [
             "cursorEnd",
@@ -643,11 +667,16 @@
             {
                 "command": "type",
                 "args": {
-                    "text": "public EFFECT_NAME = createEffect(() => this.actionStream.pipe(\n\tofType(actions.ACTION),\nfilter(action => action.PROP),\nmap(action => actions.NEW_ACTION)\n));"
+                    "text": "public EFFECT_NAME = createEffect(() => this.actionStream.pipe(\nofType(actions.ACTION),\nfilter(action => action.PROP),\nmap(action => actions.NEW_ACTION)"
                 }
             },
-            "cursorHome",
-            "deleteLeft",
+            "cursorDown",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
             "cursorUp",
             "cursorUp",
             "cursorUp",
@@ -660,11 +689,16 @@
             {
                 "command": "type",
                 "args": {
-                    "text": "public EFFECT_NAME = createEffect(() => this.actionStream.pipe(\n\tofType(actions.ACTION),\nwithLatestFrom(this.store.select(selectors.SELECTOR)),\nfilter(([action, DATA]) => DATA),\nmap(([action, DATA]) => actions.NEW_ACTION)\n));"
+                    "text": "public EFFECT_NAME = createEffect(() => this.actionStream.pipe(\nofType(actions.ACTION),\nwithLatestFrom(this.store.select(selectors.SELECTOR)),\nfilter(([action, DATA]) => DATA),\nmap(([action, DATA]) => actions.NEW_ACTION)));"
                 }
             },
-            "cursorHome",
-            "deleteLeft",
+            "cursorDown",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
             "cursorUp",
             "cursorUp",
             "cursorUp",
@@ -882,8 +916,8 @@
     "terminal.integrated.tabs.enabled": false,
     "workbench.editor.untitled.hint": "hidden",
     "sqltools.useNodeRuntime": true,
-    "workbench.statusBar.visible": false,
     "workbench.colorTheme": "Nord",
-    "window.zoomLevel": -1,
     "breadcrumbs.enabled": false,
+    "workbench.statusBar.visible": false,
+    "window.zoomLevel": -1,
 }

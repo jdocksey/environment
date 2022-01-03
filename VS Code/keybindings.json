@@ -22,7 +22,7 @@
                                     "when": "editorTextFocus" },
 
 // Editor -------------------------------------------------------------------------
-{ "key": "shift+alt+a",         "command": "workbench.action.toggleCenteredLayout" },
+{ "key": "shift+alt+a",          "command": "workbench.action.toggleCenteredLayout" },
 { "key": "ctrl+k ctrl+e",        "command": "workbench.action.closeOtherEditors" },
 { "key": "ctrl+k ctrl+w",        "command": "workbench.action.closeAllEditors" },
 { "key": "shift+alt+w",          "command": "workbench.action.toggleSidebarPosition" },
@@ -46,24 +46,24 @@
                                     "when": "editorTextFocus" },
 { "key": "alt+-",                "command": "breadcrumbs.focus",
                                     "when": "breadcrumbsPossible" },
-                                    
+
 { "key": "alt+'",                "command": "cursorEnd",
                                     "when": "textInputFocus" },
-                                    
+
 { "key": "alt+`",                "command": "workbench.action.terminal.toggleTerminal" },
 { "key": "shift+alt+`",          "command": "workbench.debug.action.toggleRepl" },
 { "key": "alt+1",                "command": "workbench.action.terminal.focusNext",
                                     "when": "terminalFocus" },
-                                    
+
 { "key": "ctrl+shift+l",         "command": "editor.action.insertCursorAtEndOfEachLineSelected",
                                     "when": "editorTextFocus" },
 
 { "key": "shift+alt+z",          "command": "editor.action.transformToLowercase",
                                     "when": "editorFocus" },
-                                    
+
 { "key": "shift+alt+x",          "command": "editor.action.transformToUppercase",
                                     "when": "editorFocus" },
-                                    
+
 { "key": "shift+alt+i",          "command": "editor.action.selectHighlights",
                                     "when": "editorFocus" },
 /*/
@@ -94,7 +94,7 @@
 
 { "key": "alt+delete",           "command": "macros.deleteStartOfLineCharacter",
                                     "when": "textInputFocus && !editorReadonly" },
-                                    
+
 { "key": "shift+alt+delete",     "command": "deleteWordPartRight",
                                     "when": "textInputFocus && !editorReadonly" },
 
@@ -116,14 +116,14 @@
 { "key": "alt+s",                "command": "workbench.files.action.showActiveFileInExplorer" },
 
 { "key": "alt+backspace",        "command": "macros.deleteEolCharacter",
-                                    "when": "editorTextFocus" }
+                                    "when": "editorTextFocus" },
 
 { "key": "ctrl+shift+backspace", "command": "macros.deleteLineLeft",
                                     "when": "editorTextFocus" },
 
 { "key": "ctrl+shift+alt+backspace", "command": "macros.deleteLineAll",
                                          "when": "editorTextFocus" },
-                                    
+
 { "key": "ctrl+shift+delete",    "command": "deleteAllRight",
                                     "when": "editorTextFocus" },
 
@@ -158,13 +158,16 @@
 
 { "key": "ctrl+alt+space",       "command": "macros.insertPaddingSpaces",
                                     "when": "editorTextFocus" },
-                                    
+
+{ "key": "alt+t",                "command": "macros.insertSetTimout",
+                                    "when": "editorTextFocus" },
+
 { "key": "alt+i",                "command": "macros.insertImportStatement",
                                     "when": "editorTextFocus" },
 
 { "key": "shift+alt+'",          "command": "macros.goToThirdToLastCharacter",
                                     "when": "editorTextFocus" },
-                                    
+
 { "key": "ctrl+alt+d",           "command": "macros.insertJasmineDescribeBlock",
                                     "when": "editorTextFocus" },
 
@@ -203,22 +206,22 @@
 
 { "key": "ctrl+shift+'",         "command": "macros.insertEqualsWithQuotes",
                                     "when": "editorTextFocus" },
-                                    
+
 { "key": "shift+alt+p",         "command": "macros.insertNgRxActionProps",
                                         "when": "editorTextFocus" },
-                                    
+
 { "key": "ctrl+shift+a",         "command": "macros.insertNgRxActionSimple",
                                         "when": "editorTextFocus" },
-                                        
+
 { "key": "ctrl+shift+alt+a",     "command": "macros.insertNgRxActionComplex",
                                         "when": "editorTextFocus" },
-                                    
+
 { "key": "ctrl+shift+e",         "command": "macros.insertNgRxEffectSimple",
                                     "when": "editorTextFocus" },
-                                    
+
 { "key": "ctrl+shift+alt+e",     "command": "macros.insertNgRxEffectComplex",
                                     "when": "editorTextFocus" },
-                                    
+
 { "key": "ctrl+shift+alt+d",    "command": "macros.duplicateLineAndToggleComment",
                                     "when": "editorTextFocus" },
 
