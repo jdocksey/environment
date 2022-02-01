@@ -15,7 +15,7 @@ Remove the `-mac`/`-windows` suffix from the `keybindings.json` file that you wi
 * [Peacock extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
 
 ### macOS portable installation
-Set up symbolic links so that files in this repository can be used by VS Code:
+If desired, set up symbolic links so that files in this repository can be used by VS Code:
 ```Bash
 ln "/<path to repo>/environment/VS Code/keybindings.json" /Applications/code-portable-data/user-data/User/keybindings.json
 ln "/<path to repo>/environment/VS Code/settings.json" /Applications/code-portable-data/user-data/User/settings.json
