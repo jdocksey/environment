@@ -1,12 +1,20 @@
 # Environment
 These are files for a development environment.
 
-## VS Code dependencies
+## Web browser extensions
+* [Dark Reader](https://darkreader.org/)
+* [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe)
+
+## VS Code
+### Dependencies
 * [JetBrains Mono font](https://www.jetbrains.com/lp/mono/)
 * [Nord theme](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
 * [macros extension](https://marketplace.visualstudio.com/items?itemName=geddski.macros)
 * [Peacock extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
 
-## Web browser extensions
-* [Dark Reader](https://darkreader.org/)
-* [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe)
+### macOS portable installation
+Set up symbolic links so that files in this repository can be used by VS Code:
+```Bash
+ln "/<path to repo>/environment/VS Code/keybindings.json" /Applications/code-portable-data/user-data/User/keybindings.json
+ln "/<path to repo>/environment/VS Code/settings.json" /Applications/code-portable-data/user-data/User/settings.json
+```

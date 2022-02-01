@@ -918,6 +918,4 @@
     "sqltools.useNodeRuntime": true,
     "workbench.colorTheme": "Nord",
     "breadcrumbs.enabled": false,
-    "workbench.statusBar.visible": false,
-    "window.zoomLevel": -1,
 }
