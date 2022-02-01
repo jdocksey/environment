@@ -27,8 +27,8 @@
     { "key": "ctrl+down",   "command": "editorScroll", "args": { "to": "down", "by": "line" } },
 
     { "key": "cmd+k cmd+e", "command": "workbench.action.closeOtherEditors" },
-    { "key": "cmd+`",       "command": "workbench.action.terminal.toggleTerminal" },
-    { "key": "cmd+1",       "command": "workbench.action.terminal.focusNext", "when": "terminalFocus" },
+    { "key": "cmd+1",       "command": "workbench.action.terminal.toggleTerminal" },
+    { "key": "cmd+2",       "command": "workbench.action.terminal.focusNext", "when": "terminalFocus" },
     { "key": "shift+cmd+1", "command": "workbench.action.terminal.kill", "when": "terminalFocus" },
     { "key": "ctrl+cmd+c",  "command": "workbench.files.action.collapseExplorerFolders" },
     { "key": "shift+cmd+d", "command": "workbench.view.debug" },
