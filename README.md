@@ -6,6 +6,8 @@ These are files for a development environment.
 * [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe)
 
 ## VS Code
+Remove the `-mac`/`-windows` suffix from the `keybindings.json` file that you wish to use.
+
 ### Dependencies
 * [JetBrains Mono font](https://www.jetbrains.com/lp/mono/)
 * [Nord theme](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
