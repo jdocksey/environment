@@ -6,8 +6,6 @@ These are files for a development environment.
 * [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe)
 
 ## VS Code
-Remove the `-mac`/`-windows` suffix from the `keybindings.json` file that you wish to use.
-
 ### Dependencies
 * [JetBrains Mono font](https://www.jetbrains.com/lp/mono/)
 * [Nord theme](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
@@ -17,6 +15,6 @@ Remove the `-mac`/`-windows` suffix from the `keybindings.json` file that you wi
 ### macOS portable installation
 If desired, set up symbolic links so that files in this repository can be used by VS Code:
 ```Bash
-ln "/<path to repo>/environment/VS Code/keybindings.json" /Applications/code-portable-data/user-data/User/keybindings.json
+ln "/<path to repo>/environment/VS Code/macOS/keybindings.json" /Applications/code-portable-data/user-data/User/keybindings.json
 ln "/<path to repo>/environment/VS Code/settings.json" /Applications/code-portable-data/user-data/User/settings.json
 ```

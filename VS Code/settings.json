@@ -84,8 +84,8 @@
     "editor.fastScrollSensitivity": 3.5,
     "editor.stablePeek": false,
     // "editor.fontFamily": "Input",
-    // "editor.fontFamily": "JetBrains Mono light",
-    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontFamily": "JetBrains Mono light",
+    // "editor.fontFamily": "JetBrains Mono",
     // "editor.fontFamily": "JetBrains Mono Medium",
     // "editor.fontFamily": "Fira Code",
     // "editor.fontWeight": "500",
@@ -918,4 +918,5 @@
     "sqltools.useNodeRuntime": true,
     "workbench.colorTheme": "Nord",
     "breadcrumbs.enabled": false,
+    "workbench.statusBar.visible": false,
 }
