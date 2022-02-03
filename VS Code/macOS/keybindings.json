@@ -22,6 +22,7 @@
     { "key": "ctrl+cmd+x",               "command": "editor.action.transformToUppercase", "when": "editorFocus" },
     { "key": "cmd+'",                    "command": "macros.eolSemicolon", "when": "editorTextFocus" },
     { "key": "shift+cmd+c",              "command": "macros.insertConsoleLog", "when": "editorTextFocus" },
+    { "key": "ctrl+cmd+e",              "command": "workbench.files.action.showActiveFileInExplorer" },
 
     { "key": "ctrl+up",     "command": "editorScroll", "args": { "to": "up", "by": "line" } },
     { "key": "ctrl+down",   "command": "editorScroll", "args": { "to": "down", "by": "line" } },
