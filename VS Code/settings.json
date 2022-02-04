@@ -914,4 +914,7 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "window.zoomLevel": 1,
+    "workbench.editor.showTabs": false,
+    "workbench.statusBar.visible": false,
 }

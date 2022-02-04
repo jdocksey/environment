@@ -9,6 +9,7 @@ These are files for a development environment.
 ### Dependencies
 * [JetBrains Mono font](https://www.jetbrains.com/lp/mono/)
 * [Nord theme](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
+* [Nord Light theme](https://marketplace.visualstudio.com/items?itemName=huytd.nord-light)
 * [macros extension](https://marketplace.visualstudio.com/items?itemName=geddski.macros)
 * [Peacock extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
 
