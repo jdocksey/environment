@@ -1,4 +1,8 @@
 {
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+
     "editor.tokenColorCustomizations": {
         "comments": "#999",
 
@@ -896,7 +900,7 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
     "typescript.preferences.importModuleSpecifier": "relative",
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Nord Light",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.suggestSelection": "first",
     "editor.minimap.enabled": false,
@@ -914,7 +918,7 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "window.zoomLevel": 1,
     "workbench.editor.showTabs": false,
     "workbench.statusBar.visible": false,
+    "window.zoomLevel": 1,
 }
