@@ -88,7 +88,8 @@
     "editor.fastScrollSensitivity": 3.5,
     "editor.stablePeek": false,
     // "editor.fontFamily": "Input",
-    "editor.fontFamily": "JetBrains Mono Extralight",
+    // "editor.fontFamily": "JetBrains Mono Extralight",
+    "editor.fontFamily": "JetBrains Mono Light",
     // "editor.fontFamily": "JetBrains Mono",
     // "editor.fontFamily": "JetBrains Mono Medium",
     // "editor.fontFamily": "Fira Code",
@@ -762,11 +763,11 @@
                 }
             }
         ],
-        "commentOnNewLine": [
+        "insertCommentOnNewLine": [
             "editor.action.insertLineBefore",
             "editor.action.commentLine"
         ],
-        "commentToDoOnNewLine": [
+        "insertCommentToDoOnNewLine": [
             "editor.action.insertLineBefore",
             "editor.action.commentLine",
             {
@@ -776,7 +777,7 @@
                 }
             }
         ],
-        "commentToDoImplementOnNewLine" : [
+        "insertCommentToDoImplementOnNewLine" : [
             "editor.action.insertLineAfter",
             "editor.action.commentLine",
             {
@@ -900,7 +901,7 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
     "typescript.preferences.importModuleSpecifier": "relative",
-    "workbench.colorTheme": "Nord Light",
+    "workbench.colorTheme": "Nord",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.suggestSelection": "first",
     "editor.minimap.enabled": false,
@@ -910,7 +911,6 @@
     "workbench.editor.untitled.hint": "hidden",
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "breadcrumbs.enabled": false,
     "explorer.confirmDelete": false,
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -918,7 +918,7 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "workbench.editor.showTabs": false,
-    "workbench.statusBar.visible": false,
+    "breadcrumbs.enabled": false,
     "window.zoomLevel": 1,
+    "workbench.statusBar.visible": false,
 }

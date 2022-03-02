@@ -21,11 +21,16 @@
     { "key": "ctrl+cmd+z",               "command": "editor.action.transformToLowercase", "when": "editorFocus" },
     { "key": "ctrl+cmd+x",               "command": "editor.action.transformToUppercase", "when": "editorFocus" },
     { "key": "cmd+'",                    "command": "macros.eolSemicolon", "when": "editorTextFocus" },
+    { "key": "cmd+;",                    "command": "macros.eolColon", "when": "editorTextFocus" },
+    { "key": "cmd+,",                    "command": "macros.eolComma", "when": "editorTextFocus" },
     { "key": "shift+cmd+c",              "command": "macros.insertConsoleLog", "when": "editorTextFocus" },
-    { "key": "ctrl+cmd+e",              "command": "workbench.files.action.showActiveFileInExplorer" },
+    { "key": "ctrl+cmd+space",           "command": "macros.insertPaddingSpaces", "when": "editorTextFocus" },
+    { "key": "ctrl+shift+cmd+/",         "command": "macros.insertCommentToDoOnNewLine", "when": "editorTextFocus" },
+    { "key": "ctrl+shift+cmd+i",         "command": "macros.insertCommentToDoImplementOnNewLine", "when": "editorTextFocus" },
+    { "key": "ctrl+cmd+e",               "command": "workbench.files.action.showActiveFileInExplorer" },
 
-    { "key": "ctrl+up",     "command": "editorScroll", "args": { "to": "up", "by": "line" } },
-    { "key": "ctrl+down",   "command": "editorScroll", "args": { "to": "down", "by": "line" } },
+    { "key": "ctrl+shift+up",     "command": "editorScroll", "args": { "to": "up", "by": "line" } },
+    { "key": "ctrl+shift+down",   "command": "editorScroll", "args": { "to": "down", "by": "line" } },
 
     { "key": "cmd+k cmd+e", "command": "workbench.action.closeOtherEditors" },
     { "key": "cmd+1",       "command": "workbench.action.terminal.toggleTerminal" },
@@ -93,9 +98,6 @@
     { "key": "shift+alt+c",          "command": "macros.insertConsoleLog",
                                         "when": "editorTextFocus" },
 
-    { "key": "ctrl+alt+space",       "command": "macros.insertPaddingSpaces",
-                                        "when": "editorTextFocus" },
-
     { "key": "alt+i",                "command": "macros.insertImportStatement",
                                         "when": "editorTextFocus" },
 
@@ -147,12 +149,6 @@
     { "key": "ctrl+'",              "command": "macros.eolSemicolon",
                                         "when": "editorTextFocus" },
 
-    { "key": "ctrl+;",              "command": "macros.eolColon",
-                                        "when": "editorTextFocus" },
-
-    { "key": "ctrl+,",              "command": "macros.eolComma",
-                                        "when": "editorTextFocus" },
-
     { "key": "ctrl+.",              "command": "macros.eolPeriod",
                                        "when": "editorTextFocus" },
 
@@ -189,13 +185,7 @@
     { "key": "ctrl+shift+alt+'",    "command": "macros.wrapWordInDoubleQuotes",
                                        "when": "editorTextFocus" },
 
-    { "key": "ctrl+alt+/",          "command": "macros.commentOnNewLine",
-                                       "when": "editorTextFocus" },
-
-    { "key": "ctrl+shift+alt+/",    "command": "macros.commentToDoOnNewLine",
-                                       "when": "editorTextFocus" },
-
-    { "key": "ctrl+shift+alt+i",    "command": "macros.commentToDoImplementOnNewLine",
+    { "key": "ctrl+alt+/",          "command": "macros.insertCommentOnNewLine",
                                        "when": "editorTextFocus" },
 
     { "key": "alt+c",                "command": "macros.selectWord",
