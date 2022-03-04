@@ -150,7 +150,7 @@
 
     // Macros -------------------------------------------------------------------------
 
-    { "key": "ctrl+shift+alt+]",     "command": "macros.selectToBracketAtEOL",
+    { "key": "ctrl+shift+alt+]",     "command": "macros.selectToBracketAtEndOfLine",
                                         "when": "editorTextFocus" },
 
     { "key": "shift+alt+c",          "command": "macros.insertConsoleLog",

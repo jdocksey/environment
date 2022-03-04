@@ -23,10 +23,15 @@
     { "key": "cmd+'",                    "command": "macros.eolSemicolon", "when": "editorTextFocus" },
     { "key": "cmd+;",                    "command": "macros.eolColon", "when": "editorTextFocus" },
     { "key": "cmd+,",                    "command": "macros.eolComma", "when": "editorTextFocus" },
+    { "key": "cmd+.",                    "command": "macros.eolPeriod", "when": "editorTextFocus" },
     { "key": "shift+cmd+c",              "command": "macros.insertConsoleLog", "when": "editorTextFocus" },
     { "key": "ctrl+cmd+space",           "command": "macros.insertPaddingSpaces", "when": "editorTextFocus" },
+    { "key": "ctrl+cmd+/",               "command": "macros.insertCommentOnNewLine", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+/",         "command": "macros.insertCommentToDoOnNewLine", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+i",         "command": "macros.insertCommentToDoImplementOnNewLine", "when": "editorTextFocus" },
+    { "key": "ctrl+shift+/",             "command": "macros.insertRepeatableBlockComment", "when": "editorTextFocus" },
+    { "key": "cmd+i",                    "command": "macros.insertImportStatement", "when": "editorTextFocus" },
+    { "key": "shift+cmd+'",              "command": "macros.goToTwoCharactersFromEnd", "when": "editorTextFocus" },
     { "key": "ctrl+cmd+e",               "command": "workbench.files.action.showActiveFileInExplorer" },
 
     { "key": "ctrl+shift+up",     "command": "editorScroll", "args": { "to": "up", "by": "line" } },
@@ -42,6 +47,9 @@
 
     { "key": "shift+cmd+-", "command": "breadcrumbs.toggle" },
 
+    { "key": "cmd+enter", "command": "editor.action.revealDefinition", "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor" },
+    { "key": "ctrl+.",    "command": "editor.action.quickFix", "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" },
+    { "key": "ctrl+i",    "command": "editor.action.triggerSuggest", "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly" },
 
 
 
@@ -92,13 +100,10 @@
 
     // Macros -------------------------------------------------------------------------
 
-    { "key": "ctrl+shift+alt+]",     "command": "macros.selectToBracketAtEOL",
+    { "key": "ctrl+shift+alt+]",     "command": "macros.selectToBracketAtEndOfLine",
                                         "when": "editorTextFocus" },
 
     { "key": "shift+alt+c",          "command": "macros.insertConsoleLog",
-                                        "when": "editorTextFocus" },
-
-    { "key": "alt+i",                "command": "macros.insertImportStatement",
                                         "when": "editorTextFocus" },
 
     { "key": "shift+alt+'",          "command": "macros.goToPenultimateCharacter",
@@ -149,9 +154,6 @@
     { "key": "ctrl+'",              "command": "macros.eolSemicolon",
                                         "when": "editorTextFocus" },
 
-    { "key": "ctrl+.",              "command": "macros.eolPeriod",
-                                       "when": "editorTextFocus" },
-
     { "key": "shift+alt+[",         "command": "macros.eolBrackets",
                                        "when": "editorTextFocus" },
 
@@ -170,9 +172,6 @@
     { "key": "shift+alt+l",         "command": "macros.insertLoopGroovy",
                                        "when": "editorTextFocus" },
 
-    { "key": "alt+/",               "command": "macros.insertRepeatableBlockComment",
-                                       "when": "editorTextFocus" },
-
     { "key": "ctrl+shift+i",        "command": "macros.newLineAbove",
                                        "when": "editorTextFocus" },
 
@@ -183,9 +182,6 @@
                                        "when": "editorTextFocus" },
 
     { "key": "ctrl+shift+alt+'",    "command": "macros.wrapWordInDoubleQuotes",
-                                       "when": "editorTextFocus" },
-
-    { "key": "ctrl+alt+/",          "command": "macros.insertCommentOnNewLine",
                                        "when": "editorTextFocus" },
 
     { "key": "alt+c",                "command": "macros.selectWord",

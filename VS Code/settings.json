@@ -187,10 +187,10 @@
                 }
             }
         ],
-        "selectToBracketAtEOL": [
+        "selectToBracketAtEndOfLine": [
             "cursorEnd",
             "editor.action.selectToBracket"
-            // { "command": "editor.action.selectToBracketAtEOL" }
+            // { "command": "editor.action.selectToBracketAtEndOfLine" }
         ],
         "goToThirdToLastCharacter": [
             "cursorEnd",
@@ -199,6 +199,11 @@
         ],
         "goToPenultimateCharacter": [
             "cursorEnd",
+            "cursorLeft"
+        ],
+        "goToTwoCharactersFromEnd": [
+            "cursorEnd",
+            "cursorLeft",
             "cursorLeft"
         ],
         "insertConsoleLog": [
@@ -617,6 +622,13 @@
                 "args": {
                     "text": "/*/"
                 }
+            },
+            "cursorUp",
+            {
+                "command": "type",
+                "args": {
+                    "text": "    "
+                }
             }
         ],
         "insertRegionTag": [
@@ -901,7 +913,7 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
     "typescript.preferences.importModuleSpecifier": "relative",
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Nord Light",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.suggestSelection": "first",
     "editor.minimap.enabled": false,
@@ -910,6 +922,7 @@
     "telemetry.enableCrashReporter": false,
     "workbench.editor.untitled.hint": "hidden",
     "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "explorer.confirmDelete": false,
     "[javascript]": {
@@ -918,7 +931,7 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "breadcrumbs.enabled": false,
-    "window.zoomLevel": 1,
     "workbench.statusBar.visible": false,
+    "breadcrumbs.enabled": false,
+    "diffEditor.renderSideBySide": false,
 }
