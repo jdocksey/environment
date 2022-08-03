@@ -1,55 +1,65 @@
 // Key bindings in this file overwrite the defaults
 [
-    { "key": "alt+cmd+left",  "command": "cursorWordPartLeft", "when": "textInputFocus" },
-    { "key": "alt+cmd+right", "command": "cursorWordPartRight", "when": "textInputFocus" },
+    { "key": "alt+cmd+left",      "command": "cursorWordPartLeft", "when": "textInputFocus" },
+    { "key": "alt+cmd+right",     "command": "cursorWordPartRight", "when": "textInputFocus" },
+    { "key": "alt+cmd+backspace", "command": "deleteWordPartLeft", "when": "textInputFocus && !editorReadonly" },
+    { "key": "alt+cmd+delete",    "command": "deleteWordPartRight", "when": "textInputFocus && !editorReadonly" },
 
     { "key": "ctrl+\\",                  "command": "macros.deleteWord", "when": "editorTextFocus" },
-    { "key": "alt+cmd+backspace",        "command": "deleteWordPartLeft", "when": "textInputFocus && !editorReadonly" },
-    { "key": "alt+cmd+delete",           "command": "deleteWordPartRight", "when": "textInputFocus && !editorReadonly" },
     { "key": "shift+backspace",          "command": "macros.deleteEolCharacter", "when": "editorTextFocus" },
     { "key": "shift+cmd+backspace",      "command": "macros.deleteLineLeft", "when": "editorTextFocus" },
     { "key": "shift+cmd+delete",         "command": "macros.deleteLineRight", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+backspace", "command": "macros.deleteLineAll", "when": "editorTextFocus" },
     { "key": "shift+delete",             "command": "macros.deleteStartOfLineCharacter", "when": "textInputFocus && !editorReadonly" },
-    { "key": "cmd+e",                    "command": "editor.action.deleteLines", "when": "textInputFocus && !editorReadonly" },
-    { "key": "cmd+j",                    "command": "editor.action.joinLines", "when": "editorTextFocus && !editorReadonly" },
-    { "key": "shift+enter",              "command": "editor.action.insertLineAfter", "when": "editorTextFocus && !editorReadonly" },
-    { "key": "shift+cmd+l",              "command": "editor.action.insertCursorAtEndOfEachLineSelected", "when": "editorTextFocus" },
-    { "key": "shift+cmd+m",              "command": "editor.action.rename", "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly" },
-    { "key": "shift+cmd+i",              "command": "editor.action.selectHighlights", "when": "editorFocus" },
-    { "key": "ctrl+shift+cmd+]",         "command": "editor.action.selectToBracket", "when": "editorTextFocus" },
-    { "key": "ctrl+cmd+z",               "command": "editor.action.transformToLowercase", "when": "editorFocus" },
-    { "key": "ctrl+cmd+x",               "command": "editor.action.transformToUppercase", "when": "editorFocus" },
     { "key": "cmd+'",                    "command": "macros.eolSemicolon", "when": "editorTextFocus" },
     { "key": "cmd+;",                    "command": "macros.eolColon", "when": "editorTextFocus" },
     { "key": "cmd+,",                    "command": "macros.eolComma", "when": "editorTextFocus" },
     { "key": "cmd+.",                    "command": "macros.eolPeriod", "when": "editorTextFocus" },
+    { "key": "ctrl+cmd+[",               "command": "macros.eolBrackets", "when": "editorTextFocus" },
+    { "key": "shift+cmd+'",              "command": "macros.goToTwoCharactersFromEnd", "when": "editorTextFocus" },
     { "key": "shift+cmd+c",              "command": "macros.insertConsoleLog", "when": "editorTextFocus" },
-    { "key": "ctrl+cmd+space",           "command": "macros.insertPaddingSpaces", "when": "editorTextFocus" },
     { "key": "ctrl+cmd+/",               "command": "macros.insertCommentOnNewLine", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+/",         "command": "macros.insertCommentToDoOnNewLine", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+i",         "command": "macros.insertCommentToDoImplementOnNewLine", "when": "editorTextFocus" },
+    { "key": "ctrl+cmd+space",           "command": "macros.insertPaddingSpaces", "when": "editorTextFocus" },
     { "key": "ctrl+shift+/",             "command": "macros.insertRepeatableBlockComment", "when": "editorTextFocus" },
+    { "key": "ctrl+n",                   "command": "macros.insertRegionTag", "when": "editorTextFocus" },
+    { "key": "shift+ctrl+n",             "command": "macros.insertEndRegionTag", "when": "editorTextFocus" },
     { "key": "cmd+i",                    "command": "macros.insertImportStatement", "when": "editorTextFocus" },
-    { "key": "shift+cmd+'",              "command": "macros.goToTwoCharactersFromEnd", "when": "editorTextFocus" },
-    { "key": "ctrl+cmd+e",               "command": "workbench.files.action.showActiveFileInExplorer" },
+    { "key": "alt+cmd+i",                "command": "macros.newLineAbove", "when": "editorTextFocus" },
+    { "key": "alt+cmd+n",                "command": "macros.newLineBelow", "when": "editorTextFocus" },
 
     { "key": "ctrl+shift+up",     "command": "editorScroll", "args": { "to": "up", "by": "line" } },
     { "key": "ctrl+shift+down",   "command": "editorScroll", "args": { "to": "down", "by": "line" } },
 
-    { "key": "cmd+k cmd+e", "command": "workbench.action.closeOtherEditors" },
-    { "key": "cmd+1",       "command": "workbench.action.terminal.toggleTerminal" },
-    { "key": "cmd+2",       "command": "workbench.action.terminal.focusNext", "when": "terminalFocus" },
-    { "key": "shift+cmd+1", "command": "workbench.action.terminal.kill", "when": "terminalFocus" },
-    { "key": "ctrl+cmd+c",  "command": "workbench.files.action.collapseExplorerFolders" },
-    { "key": "shift+cmd+d", "command": "workbench.view.debug" },
-    { "key": "shift+cmd+g", "command": "workbench.view.scm" },
+    { "key": "cmd+k cmd+e",      "command": "workbench.action.closeOtherEditors" },
+    { "key": "cmd+1",            "command": "workbench.action.terminal.toggleTerminal" },
+    { "key": "cmd+2",            "command": "workbench.action.terminal.focusNext", "when": "terminalFocus" },
+    { "key": "shift+cmd+1",      "command": "workbench.action.terminal.kill", "when": "terminalFocus" },
+    { "key": "shift+cmd+a",      "command": "workbench.action.toggleCenteredLayout" },
+    { "key": "shift+ctrl+cmd+s", "command": "workbench.action.toggleStatusbarVisibility" },
+    { "key": "ctrl+cmd+c",       "command": "workbench.files.action.collapseExplorerFolders" },
+    { "key": "ctrl+cmd+e",       "command": "workbench.files.action.showActiveFileInExplorer" },
+    { "key": "shift+cmd+d",      "command": "workbench.view.debug" },
+    { "key": "shift+cmd+g",      "command": "workbench.view.scm" },
 
     { "key": "shift+cmd+-", "command": "breadcrumbs.toggle" },
 
-    { "key": "cmd+enter", "command": "editor.action.revealDefinition", "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor" },
-    { "key": "ctrl+.",    "command": "editor.action.quickFix", "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" },
-    { "key": "ctrl+i",    "command": "editor.action.triggerSuggest", "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly" },
+    { "key": "cmd+g",            "command": "editor.action.addSelectionToNextFindMatch", "when": "editorFocus" },
+    { "key": "cmd+d",            "command": "editor.action.commentLine", "when": "editorTextFocus && !editorReadonly" },
+    { "key": "cmd+e",            "command": "editor.action.deleteLines", "when": "textInputFocus && !editorReadonly" },
+    { "key": "shift+cmd+l",      "command": "editor.action.insertCursorAtEndOfEachLineSelected", "when": "editorTextFocus" },
+    { "key": "shift+enter",      "command": "editor.action.insertLineAfter", "when": "editorTextFocus && !editorReadonly" },
+    { "key": "cmd+j",            "command": "editor.action.joinLines", "when": "editorTextFocus && !editorReadonly" },
+    { "key": "ctrl+.",           "command": "editor.action.quickFix", "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" },
+    { "key": "shift+cmd+m",      "command": "editor.action.rename", "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly" },
+    { "key": "cmd+enter",        "command": "editor.action.revealDefinition", "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor" },
+    { "key": "shift+cmd+i",      "command": "editor.action.selectHighlights", "when": "editorFocus" },
+    { "key": "ctrl+shift+cmd+]", "command": "editor.action.selectToBracket", "when": "editorTextFocus" },
+    { "key": "ctrl+cmd+z",       "command": "editor.action.transformToLowercase", "when": "editorFocus" },
+    { "key": "ctrl+cmd+x",       "command": "editor.action.transformToUppercase", "when": "editorFocus" },
+    { "key": "ctrl+i",           "command": "editor.action.triggerSuggest", "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly" },
+
 
 
 
@@ -154,9 +164,6 @@
     { "key": "ctrl+'",              "command": "macros.eolSemicolon",
                                         "when": "editorTextFocus" },
 
-    { "key": "shift+alt+[",         "command": "macros.eolBrackets",
-                                       "when": "editorTextFocus" },
-
     { "key": "ctrl+shift+.",        "command": "macros.eolHtmlClosingBracket",
                                        "when": "editorTextFocus" },
 
@@ -170,12 +177,6 @@
                                        "when": "editorTextFocus" },
 
     { "key": "shift+alt+l",         "command": "macros.insertLoopGroovy",
-                                       "when": "editorTextFocus" },
-
-    { "key": "ctrl+shift+i",        "command": "macros.newLineAbove",
-                                       "when": "editorTextFocus" },
-
-    { "key": "ctrl+shift+n",        "command": "macros.newLineBelow",
                                        "when": "editorTextFocus" },
 
     { "key": "ctrl+alt+'",          "command": "macros.wrapWordInQuotes",
@@ -192,11 +193,5 @@
 
     { "key": "ctrl+\\",              "command": "macros.deleteWord",
                                         "when": "editorTextFocus" },
-
-    { "key": "alt+n",                "command": "macros.insertRegionTag",
-                                        "when": "editorTextFocus" },
-
-    { "key": "shift+alt+n",          "command": "macros.insertEndRegionTag",
-                                        "when": "editorTextFocus" }
     /*/
 ]

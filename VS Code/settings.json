@@ -11,6 +11,9 @@
         }
     },
 
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+
     "workbench.colorCustomizations": {
         "[Nord]": {
             // "editor.background": "#201f28",
@@ -624,6 +627,7 @@
                 }
             },
             "cursorUp",
+            "cursorHome",
             {
                 "command": "type",
                 "args": {
@@ -913,11 +917,10 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
     "typescript.preferences.importModuleSpecifier": "relative",
-    "workbench.colorTheme": "Nord Light",
+    "workbench.colorTheme": "Nord",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.suggestSelection": "first",
     "editor.minimap.enabled": false,
-    "diffEditor.ignoreTrimWhitespace": false,
     "workbench.sideBar.location": "right",
     "telemetry.enableCrashReporter": false,
     "workbench.editor.untitled.hint": "hidden",
@@ -931,7 +934,15 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "workbench.statusBar.visible": false,
-    "breadcrumbs.enabled": false,
     "diffEditor.renderSideBySide": false,
+    "terminal.integrated.fontFamily": "JetBrains Mono Light",
+    "workbench.editorAssociations": {
+        "*.html": "default"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[twig]": {
+
+    },
+    "breadcrumbs.enabled": false,
+    "workbench.statusBar.visible": false,
 }
