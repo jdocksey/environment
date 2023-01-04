@@ -21,16 +21,22 @@
     { "key": "ctrl+cmd+/",               "command": "macros.insertCommentOnNewLine", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+/",         "command": "macros.insertCommentToDoOnNewLine", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+i",         "command": "macros.insertCommentToDoImplementOnNewLine", "when": "editorTextFocus" },
+    { "key": "shift+cmd+k",              "command": "macros.insertCreateAttribute", "when": "editorTextFocus" },
+    { "key": "ctrl+shift+cmd+j",         "command": "macros.insertDescribeBlock", "when": "editorTextFocus" },
+    { "key": "shift+cmd+j",              "command": "macros.insertItTest", "when": "editorTextFocus" },
     { "key": "ctrl+cmd+space",           "command": "macros.insertPaddingSpaces", "when": "editorTextFocus" },
     { "key": "ctrl+shift+/",             "command": "macros.insertRepeatableBlockComment", "when": "editorTextFocus" },
     { "key": "ctrl+n",                   "command": "macros.insertRegionTag", "when": "editorTextFocus" },
     { "key": "shift+ctrl+n",             "command": "macros.insertEndRegionTag", "when": "editorTextFocus" },
     { "key": "cmd+i",                    "command": "macros.insertImportStatement", "when": "editorTextFocus" },
+    { "key": "ctrl+cmd+j",               "command": "macros.insertTwigCodeSnippet", "when": "editorTextFocus" },
     { "key": "alt+cmd+i",                "command": "macros.newLineAbove", "when": "editorTextFocus" },
     { "key": "alt+cmd+n",                "command": "macros.newLineBelow", "when": "editorTextFocus" },
 
-    { "key": "ctrl+shift+up",     "command": "editorScroll", "args": { "to": "up", "by": "line" } },
-    { "key": "ctrl+shift+down",   "command": "editorScroll", "args": { "to": "down", "by": "line" } },
+    { "key": "ctrl+shift+up",            "command": "editorScroll", "args": { "to": "up", "by": "line" } },
+    { "key": "ctrl+shift+down",          "command": "editorScroll", "args": { "to": "down", "by": "line" } },
+
+    { "key": "cmd+0",                    "command": "editor.debug.action.toggleBreakpoint", "when": "debuggersAvailable && editorTextFocus" },
 
     { "key": "cmd+k cmd+e",      "command": "workbench.action.closeOtherEditors" },
     { "key": "cmd+1",            "command": "workbench.action.terminal.toggleTerminal" },
@@ -117,12 +123,6 @@
                                         "when": "editorTextFocus" },
 
     { "key": "shift+alt+'",          "command": "macros.goToPenultimateCharacter",
-                                        "when": "editorTextFocus" },
-
-    { "key": "ctrl+alt+d",           "command": "macros.insertJasmineDescribeBlock",
-                                        "when": "editorTextFocus" },
-
-    { "key": "ctrl+alt+j",           "command": "macros.insertJasmineTest",
                                         "when": "editorTextFocus" },
 
     { "key": "ctrl+shift+j",         "command": "macros.insertJasmineTestWithAsync",
