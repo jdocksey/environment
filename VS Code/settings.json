@@ -90,20 +90,21 @@
     "editor.mouseWheelScrollSensitivity": 3,
     "editor.fastScrollSensitivity": 3.5,
     "editor.stablePeek": false,
-    // "editor.fontFamily": "Input",
-    // "editor.fontFamily": "JetBrains Mono Extralight",
+    // "editor.fontWeight": "500",
+    // "editor.fontFamily": "Fira Code",
     "editor.fontFamily": "JetBrains Mono Light",
+    // "editor.fontFamily": "JetBrains Mono Extralight",
     // "editor.fontFamily": "JetBrains Mono",
     // "editor.fontFamily": "JetBrains Mono Medium",
+    // "editor.fontFamily": "Input",
+    // "editor.fontFamily": "Recursive"
     // "editor.fontFamily": "Fira Code",
-    // "editor.fontWeight": "500",
     // "editor.lineHeight": 22,
     "editor.lineHeight": 23,
     // "editor.lineHeight": 26,
     "editor.fontLigatures": true,
     // none, gutter, line, all
     "editor.renderLineHighlight": "all",
-    "editor.renderIndentGuides": false,
     "workbench.startupEditor": "none",
     // "emmet.useNewEmmet": true,
     "tslint.run": "onSave",
@@ -375,7 +376,7 @@
                 }
             }
         ],
-        "insertJasmineDescribeBlock": [
+        "insertDescribeBlock": [
             {
                 "command": "type",
                 "args": {
@@ -410,7 +411,7 @@
             "cursorRight",
             "cursorRight"
         ],
-        "insertJasmineTest": [
+        "insertItTest": [
             {
                 "command": "type",
                 "args": {
@@ -737,6 +738,31 @@
             "cursorWordRight",
             "cursorWordStartLeftSelect"
         ],
+        "insertCreateAttribute": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "{{ create_attribute({'class': ''}) }}"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertTwigCodeSnippet": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "{%  %}"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
         "newLineAbove": [
             "editor.action.insertLineBefore",
             "cursorDown",
@@ -825,7 +851,9 @@
             "deleteLeft"
         ]
     },
-    "[typescript]": {},
+    "[typescript]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
     "[log]": {},
     "git.enableSmartCommit": true,
     "extensions.ignoreRecommendations": false,
@@ -943,6 +971,26 @@
     "[twig]": {
 
     },
+    "files.associations": {
+        "*.yml": "twig"
+    },
+    "editor.guides.indentation": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+    "deno.inlayHints.parameterNames.enabled": "none",
+    "deno.inlayHints.parameterTypes.enabled": false,
+    "editor.suggest.showTypeParameters": false,
+    "deno.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+    "breadcrumbs.showTypeParameters": false,
+    "outline.showTypeParameters": false,
+    "deno.inlayHints.functionLikeReturnTypes.enabled": false,
+    "deno.inlayHints.enumMemberValues.enabled": false,
+    "deno.inlayHints.propertyDeclarationTypes.enabled": false,
+    "deno.inlayHints.variableTypes.enabled": false,
+    "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+    "editor.find.cursorMoveOnType": false,
     "breadcrumbs.enabled": false,
     "workbench.statusBar.visible": false,
 }
