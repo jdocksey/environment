@@ -3,7 +3,7 @@ These are files for a development environment.
 
 ## Web browser extensions
 * [Dark Reader](https://darkreader.org/)
-* [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe)
+* [Custom CSS](https://chrome.google.com/webstore/detail/custom-css-by-denis/cemphncflepgmgfhcdegkbkekifodacd)
 
 ## VS Code
 ### Dependencies
