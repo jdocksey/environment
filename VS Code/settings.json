@@ -83,18 +83,17 @@
             // "statusBar.foreground": "#e7e7e7"
         }
     },
-    "workbench.activityBar.visible": false,
     "workbench.editor.enablePreview": true,
     "workbench.editor.decorations.badges": false,
     "workbench.editor.decorations.colors": false,
     "editor.mouseWheelScrollSensitivity": 3,
     "editor.fastScrollSensitivity": 3.5,
     "editor.stablePeek": false,
-    // "editor.fontWeight": "500",
+    // "editor.fontWeight": "300",
     // "editor.fontFamily": "Fira Code",
-    "editor.fontFamily": "JetBrains Mono Light",
+    "editor.fontFamily": "JetBrains Mono",
+    // "editor.fontFamily": "JetBrains Mono Light",
     // "editor.fontFamily": "JetBrains Mono Extralight",
-    // "editor.fontFamily": "JetBrains Mono",
     // "editor.fontFamily": "JetBrains Mono Medium",
     // "editor.fontFamily": "Input",
     // "editor.fontFamily": "Recursive"
@@ -106,6 +105,9 @@
     // none, gutter, line, all
     "editor.renderLineHighlight": "all",
     "workbench.startupEditor": "none",
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
     // "emmet.useNewEmmet": true,
     "tslint.run": "onSave",
     "window.menuBarVisibility": "toggle",
@@ -945,7 +947,6 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
     "typescript.preferences.importModuleSpecifier": "relative",
-    "workbench.colorTheme": "Nord",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.suggestSelection": "first",
     "editor.minimap.enabled": false,
@@ -972,6 +973,7 @@
 
     },
     "files.associations": {
+        "*.html.twig": "twig",
         "*.yml": "twig"
     },
     "editor.guides.indentation": false,
@@ -991,6 +993,15 @@
     "deno.inlayHints.variableTypes.enabled": false,
     "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
     "editor.find.cursorMoveOnType": false,
-    "breadcrumbs.enabled": false,
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "latex",
+        "plaintext"
+    ],
+    "workbench.colorTheme": "Nord Light",
+    "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
+    "breadcrumbs.enabled": false,
 }
