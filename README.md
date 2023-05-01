@@ -26,19 +26,22 @@ ln "/<path to repo>/environment/VS Code/settings.json" /Applications/code-portab
 ssh-keygen -t ed25519 -C "example@email.com"
 ```
 
-### Add an entry to the SSH configuration (if necessary)
-`~/.ssh/config`:
-```
-Host example
-  Hostname github.com
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/example
-```
-
-
 ### Add the key to the SSH agent
 ```
 ssh-add ~/.ssh/example
 ```
 Add the `--apple-use-keychain` flag if the key has a passphrase.
+
+### Add an entry to the SSH configuration
+`~/.ssh/config`:
+```
+Host example-host
+  Hostname github.com
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/example
+```
+
+### Set up the remote connection
+```
+git remote add origin git@example-host:example-github-account/some-repo.git
+```
