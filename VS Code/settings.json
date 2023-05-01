@@ -131,6 +131,11 @@
             "cursorEndSelect",
             "deleteLeft"
         ],
+        "deleteUntilEolCharacter": [
+            "cursorEndSelect",
+            "cursorLeftSelect",
+            "deleteRight",
+        ],
         "deleteStartOfLineCharacter": [
             "cursorHome",
             "deleteRight"
@@ -220,6 +225,15 @@
                 }
             },
             "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertClassAttribute": [
+            {
+                "command": "type",
+                "args": {
+                    "text": " class=\"\""
+                }
+            },
             "cursorLeft"
         ],
         "insertPaddingSpaces": [
@@ -765,6 +779,17 @@
             "cursorLeft",
             "cursorLeft"
         ],
+        "insertTwigInterpolationSnippet": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "{{  }}"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
         "newLineAbove": [
             "editor.action.insertLineBefore",
             "cursorDown",
@@ -804,6 +829,14 @@
                 "command": "type",
                 "args": {
                     "text": "\""
+                }
+            }
+        ],
+        "insertMarkdownCheckbox": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "[ ] "
                 }
             }
         ],
@@ -966,15 +999,11 @@
     "diffEditor.renderSideBySide": false,
     "terminal.integrated.fontFamily": "JetBrains Mono Light",
     "workbench.editorAssociations": {
-        "*.html": "default"
+        "*.html": "default",
+        "*.svg": "default"
     },
-    "diffEditor.ignoreTrimWhitespace": false,
     "[twig]": {
 
-    },
-    "files.associations": {
-        "*.html.twig": "twig",
-        "*.yml": "twig"
     },
     "editor.guides.indentation": false,
     "[typescriptreact]": {
@@ -1000,8 +1029,8 @@
         "latex",
         "plaintext"
     ],
-    "workbench.colorTheme": "Nord Light",
     "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Nord Light",
     "workbench.statusBar.visible": false,
     "breadcrumbs.enabled": false,
 }
