@@ -392,6 +392,42 @@
                 }
             }
         ],
+        "insertDenoTest": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "Deno.test('', () => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+        ],
         "insertDescribeBlock": [
             {
                 "command": "type",
@@ -983,7 +1019,6 @@
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.suggestSelection": "first",
     "editor.minimap.enabled": false,
-    "workbench.sideBar.location": "right",
     "telemetry.enableCrashReporter": false,
     "workbench.editor.untitled.hint": "hidden",
     "files.trimTrailingWhitespace": true,
@@ -1030,7 +1065,9 @@
         "plaintext"
     ],
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Nord Light",
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Nord",
+    "code-runner.enableAppInsights": false,
     "workbench.statusBar.visible": false,
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": false
 }

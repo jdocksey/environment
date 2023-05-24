@@ -1,5 +1,8 @@
 // Key bindings in this file overwrite the defaults
 [
+    { "key": "shift+cmd+a", "command": "editor.action.outdentLines", "when": "editorTextFocus && !editorReadonly" },
+    { "key": "shift+cmd+s", "command": "editor.action.indentLines", "when": "editorTextFocus && !editorReadonly" },
+
     { "key": "alt+cmd+left",      "command": "cursorWordPartLeft", "when": "textInputFocus" },
     { "key": "alt+cmd+right",     "command": "cursorWordPartRight", "when": "textInputFocus" },
     { "key": "alt+cmd+backspace", "command": "deleteWordPartLeft", "when": "textInputFocus && !editorReadonly" },
@@ -25,7 +28,8 @@
     { "key": "alt+cmd+c",                "command": "macros.insertClassAttribute", "when": "editorTextFocus" },
     { "key": "shift+cmd+k",              "command": "macros.insertCreateAttribute", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+j",         "command": "macros.insertDescribeBlock", "when": "editorTextFocus" },
-    { "key": "shift+cmd+j",              "command": "macros.insertItTest", "when": "editorTextFocus" },
+    { "key": "shift+cmd+j",              "command": "macros.insertDenoTest", "when": "editorTextFocus" },
+    { "key": "shift+cmd+=",              "command": "macros.insertLambdaFunction", "when": "editorTextFocus" },
     { "key": "ctrl+cmd+space",           "command": "macros.insertPaddingSpaces", "when": "editorTextFocus" },
     { "key": "ctrl+shift+/",             "command": "macros.insertRepeatableBlockComment", "when": "editorTextFocus" },
     { "key": "ctrl+n",                   "command": "macros.insertRegionTag", "when": "editorTextFocus" },
@@ -50,7 +54,7 @@
     { "key": "cmd+4",            "command": "workbench.action.terminal.kill", "when": "terminalFocus" },
     { "key": "shift+cmd+1",      "command": "workbench.action.terminal.new", "when": "terminalProcessSupported || terminalWebExtensionContributedProfile" },
     { "key": "shift-cmd+2",      "command": "workbench.action.terminal.goToRecentDirectory", "when": "terminalFocus" },
-    { "key": "shift+cmd+a",      "command": "workbench.action.toggleCenteredLayout" },
+    { "key": "ctrl+cmd+a",       "command": "workbench.action.toggleCenteredLayout" },
     { "key": "shift+ctrl+cmd+s", "command": "workbench.action.toggleStatusbarVisibility" },
     { "key": "ctrl+cmd+c",       "command": "workbench.files.action.collapseExplorerFolders" },
     { "key": "ctrl+cmd+e",       "command": "workbench.files.action.showActiveFileInExplorer" },
