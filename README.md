@@ -45,3 +45,8 @@ Host example-host
 ```
 git remote add origin git@example-host:example-github-account/some-repo.git
 ```
+
+## Checking CPU temperature (macOS)
+```
+sudo powermetrics --samplers smc |grep -i "CPU die temperature"
+```
