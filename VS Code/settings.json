@@ -89,14 +89,15 @@
     "editor.mouseWheelScrollSensitivity": 3,
     "editor.fastScrollSensitivity": 3.5,
     "editor.stablePeek": false,
-    // "editor.fontWeight": "300",
+    "editor.fontWeight": "300",
     // "editor.fontFamily": "Fira Code",
     "editor.fontFamily": "JetBrains Mono",
+    // "editor.fontFamily": "Cochin",
+    // "editor.fontFamily": "Recursive",
     // "editor.fontFamily": "JetBrains Mono Light",
     // "editor.fontFamily": "JetBrains Mono Extralight",
     // "editor.fontFamily": "JetBrains Mono Medium",
     // "editor.fontFamily": "Input",
-    // "editor.fontFamily": "Recursive"
     // "editor.fontFamily": "Fira Code",
     // "editor.lineHeight": 22,
     "editor.lineHeight": 23,
@@ -340,6 +341,14 @@
             "cursorLeft",
             "cursorLeft"
         ],
+        "insertReturnStatement": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "return "
+                }
+            }
+        ],
         "insertLambdaFunction": [
             {
                 "command": "type",
@@ -419,6 +428,84 @@
                 "command": "editor.action.deleteLines"
             },
             "cursorUp",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+        ],
+        "insertDenoTestAsync": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "Deno.test('', async () => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+        ],
+        "insertDenoTestStepAsync": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "await test.step('', async () => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
             "cursorRight",
             "cursorRight",
             "cursorRight",
@@ -933,7 +1020,7 @@
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "none",
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 1,
@@ -947,61 +1034,17 @@
     "peacock.affectStatusBar": true,
     "peacock.favoriteColors": [
         {
-            "name": "blue-default",
-            "value": "#3474cb"
+            "name": "Nord",
+            "value": "#2E333F"
         },
         {
-            "name": "blue-bright",
-            "value": "#007fff"
+            "name": "Nord (alt)",
+            "value": "#495165"
         },
-        {
-            "name": "blue-dark",
-            "value": "#275798"
-        },
-        {
-            "name": "blue-dark-2",
-            "value": "#304472"
-        },
-        {
-            "name": "blue-gray",
-            "value": "#769ed4"
-        },
-        {
-            "name": "blue-gray-2",
-            "value": "#566DA2"
-        },
-        {
-            "name": "blue-gray-3",
-            "value": "#8596B4"
-        },
-        {
-            "name": "green",
-            "value": "#42b883"
-        },
-        {
-            "name": "yellow",
-            "value": "#f9e64f"
-        },
-        {
-            "name": "orange",
-            "value": "#eb5424"
-        },
-        {
-            "name": "orange-peach",
-            "value": "#ffa958"
-        },
-        {
-            "name": "red-pink",
-            "value": "#b73653"
-        },
-        {
-            "name": "match-background",
-            "value": "#2e3440"
-        }
     ],
     "editor.acceptSuggestionOnEnter": "off",
     "editor.snippetSuggestions": "none",
-    "update.mode": "manual",
+    "update.mode": "start",
     "workbench.editor.tabCloseButton": "off",
     "explorer.autoReveal": false,
     "diffEditor.renderIndicators": false,
@@ -1064,10 +1107,38 @@
         "latex",
         "plaintext"
     ],
-    "workbench.activityBar.visible": false,
-    "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Nord",
     "code-runner.enableAppInsights": false,
+    "scm.diffDecorationsGutterVisibility": "hover",
+    "diffEditor.maxFileSize": 3,
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.visible": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.editor.empty.hint": "hidden",
+    "tailwind-fold.supportedLanguages": [
+
+
+        "html",
+        "typescriptreact",
+        "javascriptreact",
+        "typescript",
+        "javascript",
+        "vue-html",
+        "vue",
+        "php",
+        "markdown",
+        "coffeescript",
+        "svelte",
+        "astro",
+        "twig"
+    ],
+    "tailwind-fold.showTailwindImage": false,
+    "tailwind-fold.unfoldIfLineSelected": false,
+    "tailwind-fold.autoFold": false,
+    "editor.codeActionWidget.includeNearbyQuickfixes": true,
+    "breadcrumbs.enabled": false,
     "workbench.statusBar.visible": false,
-    "breadcrumbs.enabled": false
+    "workbench.editor.showTabs": false,
 }
