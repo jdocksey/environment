@@ -23,7 +23,7 @@
             // "editor.wordHighlightBorder": "#1F89B488",
             "editor.wordHighlightStrongBackground": "#229F5788",
             "editor.wordHighlightStrongBorder": "#229F5788",
-            "editor.selectionHighlightBackground": "#1F89B488",
+            "editor.selectionHighlightBackground": "#1F89B488"
             // "editor.selectionHighlightBackground": "#1d5476",
             // "editor.selectionHighlightBackground": "#197dbb",
 
@@ -69,8 +69,7 @@
             // "editor.selectionHighlightBackground": "#75754b",
 
             "editor.findMatchBackground": "#ffd97077",
-            "editor.findMatchHighlightBackground": "#197dbb",
-
+            "editor.findMatchHighlightBackground": "#197dbb"
             // "activityBar.background": "#3574ca",
             // "activityBar.activeBorder": "#f2ccdc",
             // "activityBar.foreground": "#15202b",
@@ -135,7 +134,7 @@
         "deleteUntilEolCharacter": [
             "cursorEndSelect",
             "cursorLeftSelect",
-            "deleteRight",
+            "deleteRight"
         ],
         "deleteStartOfLineCharacter": [
             "cursorHome",
@@ -435,7 +434,7 @@
             "cursorRight",
             "cursorRight",
             "cursorRight",
-            "cursorRight",
+            "cursorRight"
         ],
         "insertDenoTestAsync": [
             {
@@ -471,7 +470,7 @@
             "cursorRight",
             "cursorRight",
             "cursorRight",
-            "cursorRight",
+            "cursorRight"
         ],
         "insertDenoTestStepAsync": [
             {
@@ -513,7 +512,7 @@
             "cursorRight",
             "cursorRight",
             "cursorRight",
-            "cursorRight",
+            "cursorRight"
         ],
         "insertDescribeBlock": [
             {
@@ -669,7 +668,7 @@
             {
                 "command": "editor.action.deleteLines"
             },
-            "cursorUp",
+            "cursorUp"
             // Navigate to the first occurrence of NEWSERVICE
             /*/
             "cursorRight",
@@ -977,7 +976,7 @@
                 }
             }
         ],
-        "insertCommentToDoImplementOnNewLine" : [
+        "insertCommentToDoImplementOnNewLine": [
             "editor.action.insertLineAfter",
             "editor.action.commentLine",
             {
@@ -1040,7 +1039,7 @@
         {
             "name": "Nord (alt)",
             "value": "#495165"
-        },
+        }
     ],
     "editor.acceptSuggestionOnEnter": "off",
     "editor.snippetSuggestions": "none",
@@ -1081,7 +1080,6 @@
         "*.svg": "default"
     },
     "[twig]": {
-
     },
     "editor.guides.indentation": false,
     "[typescriptreact]": {
@@ -1118,8 +1116,6 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "workbench.editor.empty.hint": "hidden",
     "tailwind-fold.supportedLanguages": [
-
-
         "html",
         "typescriptreact",
         "javascriptreact",
@@ -1140,5 +1136,5 @@
     "editor.codeActionWidget.includeNearbyQuickfixes": true,
     "breadcrumbs.enabled": false,
     "workbench.statusBar.visible": false,
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": false
 }

@@ -1,9 +1,7 @@
 {
     "fmt": {
-        "options": {
-            "indentWidth": 4,
-            "lineWidth": 120,
-            "singleQuote": true
-        }
+        "indentWidth": 4,
+        "lineWidth": 140,
+        "singleQuote": true
     }
 }
