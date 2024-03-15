@@ -10,7 +10,7 @@ zstyle ':vcs_info:git:*' formats '(%b)'
 setopt PROMPT_SUBST
 
 NEWLINE=$'\n'
-PS1='${NEWLINE}%m:%n %F{2}%~ ${vcs_info_msg_0_}%f${NEWLINE}'
+PS1='${NEWLINE}%F{8}%m:%n%f %F{2}%~ ${vcs_info_msg_0_}%f${NEWLINE}'
 
 
 
