@@ -1,0 +1,47 @@
+[
+    {
+        "method": "saveStyle",
+        "name": "YouTube",
+        "enabled": true,
+        "sections": [
+            {
+                "urls": [],
+                "urlPrefixes": [],
+                "domains": [
+                    "youtube.com"
+                ],
+                "regexps": [],
+                "code": "#comments, #meta, #related, #secondary, #upnext {\n    display: none;\n}\n"
+            }
+        ],
+        "updateUrl": null,
+        "md5Url": null,
+        "url": null,
+        "originalMd5": null,
+        "id": 1
+    },
+    {
+        "method": "saveStyle",
+        "name": "Stack Exchange",
+        "enabled": true,
+        "sections": [
+            {
+                "urls": [],
+                "urlPrefixes": [],
+                "domains": [
+                    "stackoverflow.com",
+                    "superuser.com",
+                    "dba.stackexchange.com",
+                    "english.stackexchange.com"
+                ],
+                "regexps": [],
+                "code": "#content {\n    margin: 5px;\n    width: 100%;\n    border: none;\n}\n\n#mainbar, .mainbar {\n    width: 100%;\n}\n\nbody {\n    padding-top: 0;\n}\n\n.community-option, #sidebar, #left-sidebar, #footer, #post-form, header, .bottom-notice {\n    display: none;\n}\n\n/* \"Ask Question\" button */\n #question-header > div {\n    display: none;\n}"
+            }
+        ],
+        "updateUrl": null,
+        "md5Url": null,
+        "url": null,
+        "originalMd5": null,
+        "id": 2
+    }
+]

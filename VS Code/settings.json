@@ -1,0 +1,1140 @@
+{
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+
+    "editor.tokenColorCustomizations": {
+        "comments": "#999",
+
+        "[Nord]": {
+            "comments": "#7e839b"
+        }
+    },
+
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+
+    "workbench.colorCustomizations": {
+        "[Nord]": {
+            // "editor.background": "#201f28",
+            "editor.wordHighlightBackground": "#267b9d88",
+            "editor.wordHighlightBorder": "#267b9d88",
+            // "editor.wordHighlightBackground": "#1F89B488",
+            // "editor.wordHighlightBorder": "#1F89B488",
+            "editor.wordHighlightStrongBackground": "#229F5788",
+            "editor.wordHighlightStrongBorder": "#229F5788",
+            "editor.selectionHighlightBackground": "#1F89B488"
+            // "editor.selectionHighlightBackground": "#1d5476",
+            // "editor.selectionHighlightBackground": "#197dbb",
+
+            // "editor.findMatchBackground": "#FFF8",
+            // "editor.findMatchBorder": "#FFF8",
+            // "editor.findMatchBackground": "#1F89B488",
+            // "editor.findMatchBackground": "#ffd97077",
+            // "editor.findMatchHighlightBackground": "#3e6379",
+
+            // "tab.inactiveForeground": "#8AF",
+            // "tab.hoverForeground": "#FFF",
+            // "tab.activeForeground": "#8AF",
+            // "gitDecoration.modifiedResourceForeground": "#808A90"
+        },
+
+        "[1337]": {
+            "sideBar.background": "#232229",
+            "sideBarSectionHeader.background": "#303040",
+            "editorGroupHeader.tabsBackground": "#191e29",
+            "tab.activeBackground": "#303040",
+            "tab.inactiveBackground": "#191e29",
+            // "tab.activeBackground": "#252533",
+
+            "editor.background": "#151a25",
+            // "editor.background": "#191e29",
+            // "editor.background": "#191919",
+            // "editor.background": "#232328",
+            // "editor.background": "#242432",
+            // "editor.background": "#292934",
+
+            "editor.lineHighlightBackground": "#20384D",
+            // "editor.lineHighlightBackground": "#456",
+            // "editor.lineHighlightBackground": "#30485D",
+            // "editor.lineHighlightBorder": "#30485D",
+            // "editorOverviewRuler.wordHighlightForeground": "#1a1a09",
+            // "editorOverviewRuler.wordHighlightStrongForeground": "#1a1a09",
+
+            "editor.wordHighlightBackground": "#1F89B488",
+            "editor.wordHighlightBorder": "#1F89B488",
+            "editor.wordHighlightStrongBackground": "#229F5788",
+            "editor.wordHighlightStrongBorder": "#229F5788",
+            "editor.selectionHighlightBackground": "#197dbb",
+            // "editor.selectionHighlightBackground": "#75754b",
+
+            "editor.findMatchBackground": "#ffd97077",
+            "editor.findMatchHighlightBackground": "#197dbb"
+            // "activityBar.background": "#3574ca",
+            // "activityBar.activeBorder": "#f2ccdc",
+            // "activityBar.foreground": "#15202b",
+            // "activityBar.inactiveForeground": "#15202b99",
+            // "activityBarBadge.background": "#f2ccdc",
+            // "activityBarBadge.foreground": "#15202b",
+
+            // "statusBar.background": "#3574ca",
+            // "statusBarItem.hoverBackground": "#5d90d5",
+            // "statusBar.foreground": "#e7e7e7"
+        }
+    },
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.decorations.badges": false,
+    "workbench.editor.decorations.colors": false,
+    "editor.mouseWheelScrollSensitivity": 3,
+    "editor.fastScrollSensitivity": 3.5,
+    "editor.stablePeek": false,
+    "editor.fontWeight": "300",
+    // "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "JetBrains Mono",
+    // "editor.fontFamily": "Cochin",
+    // "editor.fontFamily": "Recursive",
+    // "editor.fontFamily": "JetBrains Mono Light",
+    // "editor.fontFamily": "JetBrains Mono Extralight",
+    // "editor.fontFamily": "JetBrains Mono Medium",
+    // "editor.fontFamily": "Input",
+    // "editor.fontFamily": "Fira Code",
+    // "editor.lineHeight": 22,
+    "editor.lineHeight": 23,
+    // "editor.lineHeight": 26,
+    "editor.fontLigatures": true,
+    // none, gutter, line, all
+    "editor.renderLineHighlight": "all",
+    "workbench.startupEditor": "none",
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
+    // "emmet.useNewEmmet": true,
+    "tslint.run": "onSave",
+    "window.menuBarVisibility": "toggle",
+    "macros": {
+        "duplicateLineAndToggleComment": [
+            "editor.action.copyLinesDownAction",
+            "editor.action.commentLine",
+            "cursorUp"
+        ],
+        "deleteLineLeft": [
+            "cursorHomeSelect",
+            "deleteRight"
+        ],
+        "deleteLineRight": [
+            "cursorEndSelect",
+            "deleteRight"
+        ],
+        "deleteLineAll": [
+            "cursorHomeSelect",
+            "deleteRight",
+            "cursorEndSelect",
+            "deleteLeft"
+        ],
+        "deleteUntilEolCharacter": [
+            "cursorEndSelect",
+            "cursorLeftSelect",
+            "deleteRight"
+        ],
+        "deleteStartOfLineCharacter": [
+            "cursorHome",
+            "deleteRight"
+        ],
+        "deleteEolCharacter": [
+            "cursorEnd",
+            "deleteLeft"
+        ],
+        "eolSemicolon": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            }
+        ],
+        "eolColon": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ":"
+                }
+            }
+        ],
+        "eolComma": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ","
+                }
+            }
+        ],
+        "eolPeriod": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": "."
+                }
+            }
+        ],
+        "eolBrackets": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": " {\n"
+                }
+            }
+        ],
+        "eolHtmlClosingBracket": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ">"
+                }
+            }
+        ],
+        "selectToBracketAtEndOfLine": [
+            "cursorEnd",
+            "editor.action.selectToBracket"
+            // { "command": "editor.action.selectToBracketAtEndOfLine" }
+        ],
+        "goToThirdToLastCharacter": [
+            "cursorEnd",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "goToPenultimateCharacter": [
+            "cursorEnd",
+            "cursorLeft"
+        ],
+        "goToTwoCharactersFromEnd": [
+            "cursorEnd",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertConsoleLog": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "console.log();"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertClassAttribute": [
+            {
+                "command": "type",
+                "args": {
+                    "text": " class=\"\""
+                }
+            },
+            "cursorLeft"
+        ],
+        "insertPaddingSpaces": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "  "
+                }
+            },
+            "cursorLeft"
+        ],
+        "insertForEach": [
+            // Copy the word under the cursor
+            "cursorWordStartLeft",
+            "cursorWordStartRightSelect",
+            "editor.action.clipboardCopyAction",
+            "cursorLeft",
+            // Insert some text
+            {
+                "command": "type",
+                "args": {
+                    "text": "forEach("
+                }
+            },
+            "cursorWordStartRight",
+            // Insert more text
+            {
+                "command": "type",
+                "args": {
+                    "text": " => );"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft"
+            // "editor.action.clipboardPasteAction"
+        ],
+        "insertSetTimout": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "setTimeout(() => {\n"
+                }
+            },
+            "cursorDown",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": ", 1000"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorUp"
+        ],
+        "insertEqualsWithQuotes": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": "=\"\""
+                }
+            },
+            "cursorLeft"
+        ],
+        "insertFatArrow": [
+            {
+                "command": "type",
+                "args": {
+                    "text": " => "
+                }
+            }
+        ],
+        "eolInsertFatArrow": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": " => "
+                }
+            }
+        ],
+        "insertImportStatement": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "import {  } from '';"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertReturnStatement": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "return "
+                }
+            }
+        ],
+        "insertLambdaFunction": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "() => "
+                }
+            }
+        ],
+        "insertThisAtStart": [
+            "cursorHome",
+            {
+                "command": "type",
+                "args": {
+                    "text": "this."
+                }
+            }
+        ],
+        "insertMethodParens": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": "();"
+                }
+            }
+        ],
+        "insertThisAndMethodParens": [
+            "cursorHome",
+            {
+                "command": "type",
+                "args": {
+                    "text": "this."
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": "();"
+                }
+            }
+        ],
+        "insertTsLintMaxLineLength": [
+            "editor.action.insertLineBefore",
+            "editor.action.commentLine",
+            {
+                "command": "type",
+                "args": {
+                    "text": "tslint:disable-next-line:max-line-length"
+                }
+            }
+        ],
+        "insertDenoTest": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "Deno.test('', () => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight"
+        ],
+        "insertDenoTestAsync": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "Deno.test('', async () => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight"
+        ],
+        "insertDenoTestStepAsync": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "await test.step('', async () => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight"
+        ],
+        "insertDescribeBlock": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "describe('', () => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight"
+        ],
+        "insertItTest": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "it('', () => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight"
+        ],
+        "insertJasmineTestWithAsync": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "it('', async() => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp",
+            "cursorRight"
+        ],
+        "insertJasmineTestWithFakeAsync": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "it('', fakeAsync(() => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp"
+        ],
+        "insertJasmineTestForService": [
+            // Copy the word under the cursor (the name of the service)
+            "cursorWordStartLeft",
+            "cursorWordStartRightSelect",
+            "editor.action.clipboardCopyAction",
+            // Insert the spec
+            {
+                "command": "type",
+                "args": {
+                    "text": "it('', inject([NEWSERVICE], (service: NEWSERVICE) => {"
+                }
+            },
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
+                }
+            },
+            {
+                "command": "editor.action.deleteLines"
+            },
+            "cursorUp"
+            // Navigate to the first occurrence of NEWSERVICE
+            /*/
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            // Replace it with the new service name
+            "cursorWordStartRightSelect",
+            "editor.action.clipboardPasteAction",
+            // Navigate to the second occurrence of NEWSERVICE
+            "cursorEnd",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            // Replace it with the new service name
+            "cursorWordStartLeft",
+            "cursorWordStartRightSelect",
+            "editor.action.clipboardPasteAction",
+            // Position the cursor within the spec description quotes
+            "cursorHome",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight",
+            "cursorRight"
+            /*/
+        ],
+        "insertExpectCall": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "expect()"
+                }
+            },
+            "cursorLeft"
+        ],
+        "insertComponentFormGetCall": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "component.form.get('')"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertLoopGroovy": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ".each { ->\n"
+                }
+            },
+            "cursorUp",
+            "cursorEnd",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertPeriodDelayed": [
+            "cursorRight",
+            "cursorRight",
+            {
+                "command": "type",
+                "args": {
+                    "text": "."
+                }
+            }
+        ],
+        "insertRepeatableBlockComment": [
+            "editor.action.insertLineBefore",
+            {
+                "command": "type",
+                "args": {
+                    "text": "/*/"
+                }
+            },
+            "cursorDown",
+            "editor.action.insertLineAfter",
+            {
+                "command": "type",
+                "args": {
+                    "text": "/*/"
+                }
+            },
+            "cursorUp",
+            "cursorHome",
+            {
+                "command": "type",
+                "args": {
+                    "text": "    "
+                }
+            }
+        ],
+        "insertRegionTag": [
+            "editor.action.insertLineBefore",
+            {
+                "command": "type",
+                "args": {
+                    "text": "//#region "
+                }
+            }
+        ],
+        "insertEndRegionTag": [
+            "editor.action.insertLineAfter",
+            {
+                "command": "type",
+                "args": {
+                    "text": "//#endregion"
+                }
+            }
+        ],
+        "insertNgRxActionProps": [
+            {
+                "command": "type",
+                "args": {
+                    "text": ", props<{  }>()"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertNgRxActionSimple": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "export const ACTION_NAME = createAction(`${Actor.SYSTEM} DESCRIPTION`);"
+                }
+            },
+            "cursorHome",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordStartLeftSelect"
+        ],
+        "insertNgRxActionComplex": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "export const ACTION_NAME = createAction(`${Actor.SYSTEM} DESCRIPTION`, props<{ PROP: TYPE }>());"
+                }
+            },
+            "cursorHome",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordStartLeftSelect"
+        ],
+        "insertNgRxEffectSimple": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "public EFFECT_NAME = createEffect(() => this.actionStream.pipe(\nofType(actions.ACTION),\nfilter(action => action.PROP),\nmap(action => actions.NEW_ACTION)"
+                }
+            },
+            "cursorDown",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordStartLeftSelect"
+        ],
+        "insertNgRxEffectComplex": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "public EFFECT_NAME = createEffect(() => this.actionStream.pipe(\nofType(actions.ACTION),\nwithLatestFrom(this.store.select(selectors.SELECTOR)),\nfilter(([action, DATA]) => DATA),\nmap(([action, DATA]) => actions.NEW_ACTION)));"
+                }
+            },
+            "cursorDown",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorWordStartLeftSelect"
+        ],
+        "insertCreateAttribute": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "{{ create_attribute({'class': ''}) }}"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertTwigCodeSnippet": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "{%  %}"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertTwigInterpolationSnippet": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "{{  }}"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "newLineAbove": [
+            "editor.action.insertLineBefore",
+            "cursorDown",
+            "cursorEnd"
+        ],
+        "newLineBelow": [
+            "editor.action.insertLineAfter",
+            "cursorUp",
+            "cursorEnd"
+        ],
+        "wrapWordInQuotes": [
+            "cursorWordStartLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "'"
+                }
+            },
+            "cursorWordStartRight",
+            {
+                "command": "type",
+                "args": {
+                    "text": "'"
+                }
+            }
+        ],
+        "wrapWordInDoubleQuotes": [
+            "cursorWordStartLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\""
+                }
+            },
+            "cursorWordStartRight",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\""
+                }
+            }
+        ],
+        "insertMarkdownCheckbox": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "[ ] "
+                }
+            }
+        ],
+        "insertCommentOnNewLine": [
+            "editor.action.insertLineBefore",
+            "editor.action.commentLine"
+        ],
+        "insertCommentToDoOnNewLine": [
+            "editor.action.insertLineBefore",
+            "editor.action.commentLine",
+            {
+                "command": "type",
+                "args": {
+                    "text": "TODO: "
+                }
+            }
+        ],
+        "insertCommentToDoImplementOnNewLine": [
+            "editor.action.insertLineAfter",
+            "editor.action.commentLine",
+            {
+                "command": "type",
+                "args": {
+                    "text": "TODO: Implement"
+                }
+            }
+        ],
+        "selectWord": [
+            "cursorWordStartLeft",
+            "cursorWordStartRightSelect",
+            "editor.action.clipboardCopyAction",
+            "cursorRight"
+        ],
+        "replaceWord": [
+            "cursorWordStartLeft",
+            "cursorWordRightSelect",
+            "editor.action.clipboardPasteAction"
+        ],
+        "deleteWord": [
+            "cursorWordStartLeft",
+            "cursorWordRightSelect",
+            "deleteLeft"
+        ],
+        "deleteWordAtStartOfLine": [
+            "cursorHome",
+            "cursorWordRightSelect",
+            "deleteLeft"
+        ]
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[log]": {},
+    "git.enableSmartCommit": true,
+    "extensions.ignoreRecommendations": false,
+    "typescript.check.npmIsInstalled": false,
+    "telemetry.enableTelemetry": false,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 1,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "peacock.affectTitleBar": false,
+    "peacock.affectStatusBar": true,
+    "peacock.favoriteColors": [
+        {
+            "name": "Nord",
+            "value": "#2E333F"
+        },
+        {
+            "name": "Nord (alt)",
+            "value": "#495165"
+        }
+    ],
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.snippetSuggestions": "none",
+    "update.mode": "start",
+    "workbench.editor.tabCloseButton": "off",
+    "explorer.autoReveal": false,
+    "diffEditor.renderIndicators": false,
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.iconTheme": null,
+    "files.autoSave": "onFocusChange",
+    "editor.wordBasedSuggestions": false,
+    "javascript.preferences.importModuleSpecifier": "relative",
+    // "editor.suggestSelection": "first",
+    "editor.minimap.size": "fit",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.suggestSelection": "first",
+    "editor.minimap.enabled": false,
+    "telemetry.enableCrashReporter": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "explorer.confirmDelete": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "diffEditor.renderSideBySide": false,
+    "terminal.integrated.fontFamily": "JetBrains Mono Light",
+    "workbench.editorAssociations": {
+        "*.html": "default",
+        "*.svg": "default"
+    },
+    "[twig]": {
+    },
+    "editor.guides.indentation": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+    "deno.inlayHints.parameterNames.enabled": "none",
+    "deno.inlayHints.parameterTypes.enabled": false,
+    "editor.suggest.showTypeParameters": false,
+    "deno.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+    "breadcrumbs.showTypeParameters": false,
+    "outline.showTypeParameters": false,
+    "deno.inlayHints.functionLikeReturnTypes.enabled": false,
+    "deno.inlayHints.enumMemberValues.enabled": false,
+    "deno.inlayHints.propertyDeclarationTypes.enabled": false,
+    "deno.inlayHints.variableTypes.enabled": false,
+    "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+    "editor.find.cursorMoveOnType": false,
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "latex",
+        "plaintext"
+    ],
+    "workbench.colorTheme": "Nord",
+    "code-runner.enableAppInsights": false,
+    "scm.diffDecorationsGutterVisibility": "hover",
+    "diffEditor.maxFileSize": 3,
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.visible": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.editor.empty.hint": "hidden",
+    "tailwind-fold.supportedLanguages": [
+        "html",
+        "typescriptreact",
+        "javascriptreact",
+        "typescript",
+        "javascript",
+        "vue-html",
+        "vue",
+        "php",
+        "markdown",
+        "coffeescript",
+        "svelte",
+        "astro",
+        "twig"
+    ],
+    "tailwind-fold.showTailwindImage": false,
+    "tailwind-fold.unfoldIfLineSelected": false,
+    "tailwind-fold.autoFold": false,
+    "editor.codeActionWidget.includeNearbyQuickfixes": true,
+    "breadcrumbs.enabled": false,
+    "workbench.statusBar.visible": false,
+    "workbench.editor.showTabs": false
+}
