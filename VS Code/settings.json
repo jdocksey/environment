@@ -88,16 +88,16 @@
     "editor.mouseWheelScrollSensitivity": 3,
     "editor.fastScrollSensitivity": 3.5,
     "editor.stablePeek": false,
-    "editor.fontWeight": "300",
-    // "editor.fontFamily": "Fira Code",
-    "editor.fontFamily": "JetBrains Mono",
-    // "editor.fontFamily": "Cochin",
-    // "editor.fontFamily": "Recursive",
-    // "editor.fontFamily": "JetBrains Mono Light",
+    // "editor.fontWeight": "300",
+    // "editor.fontFamily": "JetBrains Mono",
     // "editor.fontFamily": "JetBrains Mono Extralight",
+    // "editor.fontFamily": "Alegreya",
+    "editor.fontFamily": "JetBrains Mono Light",
     // "editor.fontFamily": "JetBrains Mono Medium",
-    // "editor.fontFamily": "Input",
     // "editor.fontFamily": "Fira Code",
+    // "editor.fontFamily": "Recursive Sans",
+    // "editor.fontFamily": "Input",
+    // "editor.fontFamily": "Cochin",
     // "editor.lineHeight": 22,
     "editor.lineHeight": 23,
     // "editor.lineHeight": 26,
@@ -109,8 +109,6 @@
         "twig": "html"
     },
     // "emmet.useNewEmmet": true,
-    "tslint.run": "onSave",
-    "window.menuBarVisibility": "toggle",
     "macros": {
         "duplicateLineAndToggleComment": [
             "editor.action.copyLinesDownAction",
@@ -138,6 +136,12 @@
         ],
         "deleteStartOfLineCharacter": [
             "cursorHome",
+            "deleteRight"
+        ],
+        "deleteStartOfLineWord": [
+            "cursorHome",
+            "cursorWordRightSelect",
+            "deleteLeft",
             "deleteRight"
         ],
         "deleteEolCharacter": [
@@ -227,11 +231,53 @@
             "cursorLeft",
             "cursorLeft"
         ],
+        "insertFormatterIgnoreDeno": [
+            "editor.action.insertLineBefore",
+            {
+
+                "command": "type",
+                "args": {
+                    "text": "// deno-fmt-ignore"
+                }
+            },
+            "cursorDown",
+            "cursorEnd"
+        ],
+        "insertFormatterIgnorePrettier": [
+            "editor.action.insertLineBefore",
+            {
+
+                "command": "type",
+                "args": {
+                    "text": "// prettier-ignore"
+                }
+            },
+            "cursorDown",
+            "cursorEnd"
+        ],
         "insertClassAttribute": [
             {
                 "command": "type",
                 "args": {
                     "text": " class=\"\""
+                }
+            },
+            "cursorLeft"
+        ],
+        "insertClassNameAttribute": [
+            {
+                "command": "type",
+                "args": {
+                    "text": " className=\"\""
+                }
+            },
+            "cursorLeft"
+        ],
+        "insertClassAttributeWithSingleQuotes": [
+            {
+                "command": "type",
+                "args": {
+                    "text": " class=''"
                 }
             },
             "cursorLeft"
@@ -470,7 +516,7 @@
             "cursorRight",
             "cursorRight",
             "cursorRight",
-            "cursorRight"
+            "cursorRight",
         ],
         "insertDenoTestStepAsync": [
             {
@@ -894,11 +940,9 @@
             {
                 "command": "type",
                 "args": {
-                    "text": "{%  %}"
+                    "text": "{%  "
                 }
             },
-            "cursorLeft",
-            "cursorLeft",
             "cursorLeft"
         ],
         "insertTwigInterpolationSnippet": [
@@ -958,7 +1002,7 @@
             {
                 "command": "type",
                 "args": {
-                    "text": "[ ] "
+                    "text": "- [ ] "
                 }
             }
         ],
@@ -1015,7 +1059,7 @@
     "git.enableSmartCommit": true,
     "extensions.ignoreRecommendations": false,
     "typescript.check.npmIsInstalled": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "none",
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -1043,7 +1087,7 @@
     ],
     "editor.acceptSuggestionOnEnter": "off",
     "editor.snippetSuggestions": "none",
-    "update.mode": "start",
+    "update.mode": "manual",
     "workbench.editor.tabCloseButton": "off",
     "explorer.autoReveal": false,
     "diffEditor.renderIndicators": false,
@@ -1051,7 +1095,7 @@
     "workbench.tree.renderIndentGuides": "none",
     "workbench.iconTheme": null,
     "files.autoSave": "onFocusChange",
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "javascript.preferences.importModuleSpecifier": "relative",
     // "editor.suggestSelection": "first",
     "editor.minimap.size": "fit",
@@ -1060,9 +1104,6 @@
     "typescript.preferences.importModuleSpecifier": "relative",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.suggestSelection": "first",
-    "editor.minimap.enabled": false,
-    "telemetry.enableCrashReporter": false,
-    "workbench.editor.untitled.hint": "hidden",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -1081,7 +1122,6 @@
     },
     "[twig]": {
     },
-    "editor.guides.indentation": false,
     "[typescriptreact]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
     },
@@ -1105,15 +1145,12 @@
         "latex",
         "plaintext"
     ],
-    "workbench.colorTheme": "Nord",
     "code-runner.enableAppInsights": false,
     "scm.diffDecorationsGutterVisibility": "hover",
     "diffEditor.maxFileSize": 3,
     "workbench.sideBar.location": "right",
-    "workbench.activityBar.visible": false,
     "workbench.layoutControl.enabled": false,
     "window.commandCenter": false,
-    "diffEditor.ignoreTrimWhitespace": false,
     "workbench.editor.empty.hint": "hidden",
     "tailwind-fold.supportedLanguages": [
         "html",
@@ -1133,8 +1170,25 @@
     "tailwind-fold.showTailwindImage": false,
     "tailwind-fold.unfoldIfLineSelected": false,
     "tailwind-fold.autoFold": false,
-    "editor.codeActionWidget.includeNearbyQuickfixes": true,
-    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "editor.codeActionWidget.includeNearbyQuickFixes": true,
+    "svg.preview.mode": "svg",
+    "svg.preview.backgroundCustom": "#E1CECE",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "diffEditor.experimental.showMoves": true,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.editor.tabActionCloseVisibility": false,
+    "editor.stickyScroll.enabled": false,
+    "php.debug.executablePath": "/usr/local/Cellar/php/8.3.6/bin/php",
+    "editor.guides.indentation": false,
+    "workbench.colorTheme": "Nord",
+    "editor.colorDecorators": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.unicodeHighlight.ambiguousCharacters": true,
     "workbench.statusBar.visible": false,
-    "workbench.editor.showTabs": false
+    "breadcrumbs.enabled": false
 }

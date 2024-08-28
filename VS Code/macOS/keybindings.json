@@ -15,6 +15,7 @@
     { "key": "ctrl+shift+cmd+backspace", "command": "macros.deleteLineAll", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+delete",    "command": "macros.deleteUntilEolCharacter", "when": "editorTextFocus" },
     { "key": "shift+delete",             "command": "macros.deleteStartOfLineCharacter", "when": "textInputFocus && !editorReadonly" },
+    { "key": "shift+alt+delete",         "command": "macros.deleteStartOfLineWord", "when": "textInputFocus && !editorReadonly" },
     { "key": "cmd+'",                    "command": "macros.eolSemicolon", "when": "editorTextFocus" },
     { "key": "cmd+;",                    "command": "macros.eolColon", "when": "editorTextFocus" },
     { "key": "cmd+,",                    "command": "macros.eolComma", "when": "editorTextFocus" },
@@ -27,6 +28,7 @@
     { "key": "shift+cmd+r",              "command": "macros.insertReturnStatement", "when": "editorTextFocus" },
     { "key": "shift+cmd+c",              "command": "macros.insertConsoleLog", "when": "editorTextFocus" },
     { "key": "alt+cmd+c",                "command": "macros.insertClassAttribute", "when": "editorTextFocus" },
+    { "key": "ctrl+c",                   "command": "macros.insertClassNameAttribute", "when": "editorTextFocus" },
     { "key": "shift+cmd+k",              "command": "macros.insertCreateAttribute", "when": "editorTextFocus" },
     { "key": "shift+cmd+j",              "command": "macros.insertDenoTest", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+j",         "command": "macros.insertDenoTestAsync", "when": "editorTextFocus" },
@@ -36,7 +38,9 @@
     { "key": "ctrl+shift+/",             "command": "macros.insertRepeatableBlockComment", "when": "editorTextFocus" },
     { "key": "ctrl+n",                   "command": "macros.insertRegionTag", "when": "editorTextFocus" },
     { "key": "shift+ctrl+n",             "command": "macros.insertEndRegionTag", "when": "editorTextFocus" },
-    { "key": "cmd+i",                    "command": "macros.insertImportStatement", "when": "editorTextFocus" },
+    { "key": "cmd+i cmd+m",              "command": "macros.insertImportStatement", "when": "editorTextFocus" },
+    { "key": "cmd+i cmd+d",              "command": "macros.insertFormatterIgnoreDeno", "when": "editorTextFocus" },
+    { "key": "cmd+i cmd+p",              "command": "macros.insertFormatterIgnorePrettier", "when": "editorTextFocus" },
     { "key": "ctrl+cmd+j",               "command": "macros.insertTwigCodeSnippet", "when": "editorTextFocus" },
     { "key": "ctrl+shift+cmd+[",         "command": "macros.insertTwigInterpolationSnippet", "when": "editorTextFocus" },
     { "key": "alt+cmd+i",                "command": "macros.newLineAbove", "when": "editorTextFocus" },
@@ -69,8 +73,9 @@
     { "key": "shift+ctrl+cmd+s", "command": "workbench.action.toggleStatusbarVisibility" },
     { "key": "ctrl+cmd+c",       "command": "workbench.files.action.collapseExplorerFolders" },
     { "key": "ctrl+cmd+e",       "command": "workbench.files.action.showActiveFileInExplorer" },
-    { "key": "shift+cmd+d",      "command": "workbench.view.debug" },
+    { "key": "shift+cmd+e",      "command": "workbench.view.explorer" },
     { "key": "shift+cmd+g",      "command": "workbench.view.scm" },
+    { "key": "shift+cmd+d",      "command": "workbench.view.debug" },
 
     { "key": "shift+alt+cmd+c",       "command": "copyFilePath",         "when": "!editorFocus" },
     { "key": "cmd+k shift+alt+cmd+c", "command": "copyFilePath",         "when": "editorFocus" },
@@ -131,10 +136,6 @@
                                         "when": "editorTextFocus" },
     { "key": "ctrl+shift+alt+s",     "command": "merge-conflict.accept.all-incoming",
                                         "when": "editorTextFocus" },
-
-
-    { "key": "ctrl+shift+alt+delete", "command": "macros.deleteWordAtStartOfLine",
-                                        "when": "textInputFocus && !editorReadonly" },
 
     { "key": "alt+q",                "command": "toggleFindCaseSensitive",
                                         "when": "editorFocus" },
