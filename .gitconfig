@@ -26,5 +26,8 @@
 	rb = rebase
 	f = fetch
 	ul = pull
+	sa = stash apply
+	sv = stash save
+	sl = stash list
 [color "branch"]
 	current = red

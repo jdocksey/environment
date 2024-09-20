@@ -16,6 +16,7 @@ PS1='${NEWLINE}%F{8}%m:%n%f %F{2}%~ ${vcs_info_msg_0_}%f${NEWLINE}'
 
 # Aliases
 alias c='clear'
+alias cs='clear && '
 
 alias v='vim'
 alias pr='vim ~/.zshrc'

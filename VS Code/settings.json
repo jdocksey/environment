@@ -1,4 +1,7 @@
 {
+    "files.associations": {
+        "*.mdx": "markdown"
+    },
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
@@ -92,12 +95,12 @@
     // "editor.fontFamily": "JetBrains Mono",
     // "editor.fontFamily": "JetBrains Mono Extralight",
     // "editor.fontFamily": "Alegreya",
+    // "editor.fontFamily": "Cochin",
     "editor.fontFamily": "JetBrains Mono Light",
     // "editor.fontFamily": "JetBrains Mono Medium",
     // "editor.fontFamily": "Fira Code",
     // "editor.fontFamily": "Recursive Sans",
     // "editor.fontFamily": "Input",
-    // "editor.fontFamily": "Cochin",
     // "editor.lineHeight": 22,
     "editor.lineHeight": 23,
     // "editor.lineHeight": 26,
@@ -399,6 +402,31 @@
                 "command": "type",
                 "args": {
                     "text": "() => "
+                }
+            }
+        ],
+        "insertMappingText": [
+            {
+                "command": "type",
+                "args": {
+                    "text": " => {"
+                }
+            },
+            "cursorRight",
+            "cursorRight",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "\n"
                 }
             }
         ],
@@ -1005,6 +1033,37 @@
                     "text": "- [ ] "
                 }
             }
+        ],
+        "insertAstroComment": [
+            "editor.action.insertLineBefore",
+            {
+                "command": "type",
+                "args": {
+                    "text": "{/* "
+                }
+            },
+            {
+                "command": "type",
+                "args": {
+                    "text": " */}"
+                }
+            },
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft",
+            "cursorLeft"
+        ],
+        "insertAstroPropsAssignment": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "const {  } = Astro.props;"
+                }
+            },
+            "cursorHome",
+            "cursorWordRight",
+            "cursorWordRight",
+            "cursorRight"
         ],
         "insertCommentOnNewLine": [
             "editor.action.insertLineBefore",
