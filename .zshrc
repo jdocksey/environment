@@ -12,8 +12,6 @@ setopt PROMPT_SUBST
 NEWLINE=$'\n'
 PS1='${NEWLINE}%F{8}%m:%n%f %F{2}%~ ${vcs_info_msg_0_}%f${NEWLINE}'
 
-
-
 # Aliases
 alias c='clear'
 alias cs='clear && '
@@ -24,22 +22,12 @@ alias pr='vim ~/.zshrc'
 alias g='git'
 alias s='git status'
 alias b='git branch'
+alias d='git diff'
 alias l='git log --pretty=oneline'
 
+alias dl='deno lint'
+alias df='deno fmt'
+alias r='deno task run'
+alias t='deno test'
+
 alias sha='shasum -a 256'
-
-# deployctl
-export DEPLOYCTL_HOME="/Users/Joseph/.deno/bin"
-case ":$PATH:" in
-  *":$DEPLOYCTL_HOME:"*) ;;
-  *) export PATH="$DEPLOYCTL_HOME:$PATH" ;;
-esac
-# deployctl end
-
-# pnpm
-export PNPM_HOME="/Users/Joseph/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
