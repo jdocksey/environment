@@ -20,7 +20,7 @@
 	ll = log --pretty=oneline
 	p = cherry-pick
 	r = remote -v
-	u = reset HEAD *
+	u = reset
 	m = merge
 	ca = commit -a --amend
 	rb = rebase
