@@ -5,18 +5,14 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
-
     "editor.tokenColorCustomizations": {
         "comments": "#999",
-
         "[Nord]": {
             "comments": "#7e839b"
         }
     },
-
     "javascript.preferences.quoteStyle": "single",
     "typescript.preferences.quoteStyle": "single",
-
     "workbench.colorCustomizations": {
         "[Nord]": {
             // "editor.background": "#201f28",
@@ -29,19 +25,16 @@
             "editor.selectionHighlightBackground": "#1F89B488"
             // "editor.selectionHighlightBackground": "#1d5476",
             // "editor.selectionHighlightBackground": "#197dbb",
-
             // "editor.findMatchBackground": "#FFF8",
             // "editor.findMatchBorder": "#FFF8",
             // "editor.findMatchBackground": "#1F89B488",
             // "editor.findMatchBackground": "#ffd97077",
             // "editor.findMatchHighlightBackground": "#3e6379",
-
             // "tab.inactiveForeground": "#8AF",
             // "tab.hoverForeground": "#FFF",
             // "tab.activeForeground": "#8AF",
             // "gitDecoration.modifiedResourceForeground": "#808A90"
         },
-
         "[1337]": {
             "sideBar.background": "#232229",
             "sideBarSectionHeader.background": "#303040",
@@ -49,28 +42,24 @@
             "tab.activeBackground": "#303040",
             "tab.inactiveBackground": "#191e29",
             // "tab.activeBackground": "#252533",
-
             "editor.background": "#151a25",
             // "editor.background": "#191e29",
             // "editor.background": "#191919",
             // "editor.background": "#232328",
             // "editor.background": "#242432",
             // "editor.background": "#292934",
-
             "editor.lineHighlightBackground": "#20384D",
             // "editor.lineHighlightBackground": "#456",
             // "editor.lineHighlightBackground": "#30485D",
             // "editor.lineHighlightBorder": "#30485D",
             // "editorOverviewRuler.wordHighlightForeground": "#1a1a09",
             // "editorOverviewRuler.wordHighlightStrongForeground": "#1a1a09",
-
             "editor.wordHighlightBackground": "#1F89B488",
             "editor.wordHighlightBorder": "#1F89B488",
             "editor.wordHighlightStrongBackground": "#229F5788",
             "editor.wordHighlightStrongBorder": "#229F5788",
             "editor.selectionHighlightBackground": "#197dbb",
             // "editor.selectionHighlightBackground": "#75754b",
-
             "editor.findMatchBackground": "#ffd97077",
             "editor.findMatchHighlightBackground": "#197dbb"
             // "activityBar.background": "#3574ca",
@@ -79,7 +68,6 @@
             // "activityBar.inactiveForeground": "#15202b99",
             // "activityBarBadge.background": "#f2ccdc",
             // "activityBarBadge.foreground": "#15202b",
-
             // "statusBar.background": "#3574ca",
             // "statusBarItem.hoverBackground": "#5d90d5",
             // "statusBar.foreground": "#e7e7e7"
@@ -103,7 +91,6 @@
     // "editor.fontFamily": "Input",
     // "editor.lineHeight": 22,
     "editor.lineHeight": 23,
-    // "editor.lineHeight": 26,
     "editor.fontLigatures": true,
     // none, gutter, line, all
     "editor.renderLineHighlight": "all",
@@ -111,7 +98,6 @@
     "emmet.includeLanguages": {
         "twig": "html"
     },
-    // "emmet.useNewEmmet": true,
     "macros": {
         "duplicateLineAndToggleComment": [
             "editor.action.copyLinesDownAction",
@@ -237,7 +223,6 @@
         "insertFormatterIgnoreDeno": [
             "editor.action.insertLineBefore",
             {
-
                 "command": "type",
                 "args": {
                     "text": "// deno-fmt-ignore"
@@ -249,7 +234,6 @@
         "insertFormatterIgnorePrettier": [
             "editor.action.insertLineBefore",
             {
-
                 "command": "type",
                 "args": {
                     "text": "// prettier-ignore"
@@ -1026,6 +1010,22 @@
                 }
             }
         ],
+        "wrapWordInPromiseType": [
+            "cursorWordLeft",
+            {
+                "command": "type",
+                "args": {
+                    "text": "Promise<"
+                }
+            },
+            "cursorWordRight",
+            {
+                "command": "type",
+                "args": {
+                    "text": ">"
+                }
+            }
+        ],
         "insertMarkdownCheckbox": [
             {
                 "command": "type",
@@ -1111,7 +1111,7 @@
             "deleteLeft"
         ]
     },
-    "[typescript]": {
+    "[html]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
     },
     "[log]": {},
@@ -1132,22 +1132,9 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "peacock.affectTitleBar": false,
-    "peacock.affectStatusBar": true,
-    "peacock.favoriteColors": [
-        {
-            "name": "Nord",
-            "value": "#2E333F"
-        },
-        {
-            "name": "Nord (alt)",
-            "value": "#495165"
-        }
-    ],
     "editor.acceptSuggestionOnEnter": "off",
     "editor.snippetSuggestions": "none",
     "update.mode": "manual",
-    "workbench.editor.tabCloseButton": "off",
     "explorer.autoReveal": false,
     "diffEditor.renderIndicators": false,
     "workbench.tree.indent": 20,
@@ -1156,7 +1143,6 @@
     "files.autoSave": "onFocusChange",
     "editor.wordBasedSuggestions": "off",
     "javascript.preferences.importModuleSpecifier": "relative",
-    // "editor.suggestSelection": "first",
     "editor.minimap.size": "fit",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
@@ -1167,35 +1153,16 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "explorer.confirmDelete": false,
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
     "diffEditor.renderSideBySide": false,
     "terminal.integrated.fontFamily": "JetBrains Mono Light",
     "workbench.editorAssociations": {
         "*.html": "default",
         "*.svg": "default"
     },
-    "[twig]": {
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "denoland.vscode-deno"
-    },
     "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
-    "deno.inlayHints.parameterNames.enabled": "none",
-    "deno.inlayHints.parameterTypes.enabled": false,
     "editor.suggest.showTypeParameters": false,
-    "deno.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
     "breadcrumbs.showTypeParameters": false,
     "outline.showTypeParameters": false,
-    "deno.inlayHints.functionLikeReturnTypes.enabled": false,
-    "deno.inlayHints.enumMemberValues.enabled": false,
-    "deno.inlayHints.propertyDeclarationTypes.enabled": false,
-    "deno.inlayHints.variableTypes.enabled": false,
-    "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
     "editor.find.cursorMoveOnType": false,
     "spellright.language": [
         "en"
@@ -1204,7 +1171,6 @@
         "latex",
         "plaintext"
     ],
-    "code-runner.enableAppInsights": false,
     "scm.diffDecorationsGutterVisibility": "hover",
     "diffEditor.maxFileSize": 3,
     "workbench.sideBar.location": "right",
@@ -1233,9 +1199,6 @@
     "editor.codeActionWidget.includeNearbyQuickFixes": true,
     "svg.preview.mode": "svg",
     "svg.preview.backgroundCustom": "#E1CECE",
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
     "diffEditor.experimental.showMoves": true,
     "editor.minimap.enabled": false,
     "terminal.integrated.defaultProfile.osx": "zsh",
@@ -1246,8 +1209,12 @@
     "editor.guides.indentation": false,
     "workbench.colorTheme": "Nord",
     "editor.colorDecorators": false,
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.pasteAs.preferences": [
+        "text.updateImports.jsts"
+    ],
+    "terminal.integrated.fontLigatures": true,
     "workbench.statusBar.visible": false,
     "breadcrumbs.enabled": false
 }
